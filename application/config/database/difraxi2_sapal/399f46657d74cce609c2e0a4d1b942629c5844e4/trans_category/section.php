@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"field":"section","label":"Secci\u00f3n","type":"select","options":["trans","conta"],"type_options":{"size":"210","width":"300","height":"100","thumbnail":"mini"},"validation":"notEmpty","values":["1","2"],"db_options":{"table":"trans_sections","key":"id","value":"nombre"},"list_choose":"database","multiple":""}

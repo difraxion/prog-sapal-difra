@@ -1,0 +1,133 @@
+.sac_dashboard
+	h1.tac#gral.wrapper {TITLE} 
+	#gralBox
+		h1.tac TU ENLACE DIRECTO CON SAPAL
+		.tac
+			h2.dib Paga o&nbsp;
+			form(action="http://mapas.sapal.gob.mx/recibos/index.php", method="post", name="miforma", target="_blank").dib
+				input(type="hidden", name="cuenta", value="{CUENTA}")#cuenta
+				a(href="#", onclick="miforma.submit();return false;").lnk_descarga Descarga tu recibo
+		table.tb1
+			thead
+				tr
+					th CUENTA
+					th TOTAL A PAGAR
+					th VENCIMIENTO
+			tbody
+				tr
+					td(colspan="3")
+				tr
+					td {CUENTA}
+					td {TOTAL_A_PAGAR}
+					td {VENCIMIENTO}
+				tr
+					td(colspan="3")
+						hr
+				tr
+					td(colspan="3")
+						span.l {NOMBRE}
+						br.clear
+						span.l GIRO:&nbsp;{GIRO}
+						.clear
+				tr
+					td(colspan="3")
+						hr
+				tr
+					td(colspan="3")
+						label DOMICILIO DE LA TOMA
+						.clear
+						span.l {CALLE}
+						br.clear
+						span.l {COLONIA}
+						br.clear
+						span.l LEÓN, GTO.
+		table.tb1
+			thead
+				tr
+					th MES DE FACTURACIÓN
+					th CONSUMO PROMEDIO
+					th LECTURA ANTERIOR
+					th MESES DE ADEUDO
+					th TOMAS
+					th TARIFA
+			tbody
+				tr
+					td(colspan="6")
+				tr
+					td {MES_FACTURA}
+					td {CONSUMO_PROMEDIO}
+					td {LECTURA_ANTERIOR}
+					td {MESES_ADEUDO}
+					td {TOMAS}
+					td {TARIFA}
+		table.tb1
+			thead
+				tr
+					th MEDIDOR
+					th CONTROL
+					th ESTATUS
+					th CORTADO
+			tbody
+				tr
+					td(colspan="4")
+				tr
+					td {MEDIDOR}
+					td {CONTROL}
+					td {ESTATUS}
+					td {CORTADO}
+				tr
+					td(colspan="4")
+		table.tb1
+			thead
+				tr
+					th CONCEPTO DEL COBRO
+					th IMPORTE
+			tbody
+				tr
+					td(colspan="2")
+				tr
+					td
+						span.l CONSUMO AGUA
+						br.clear
+						span.l I. V. A. 
+						br.clear
+						span.l SUMA TOTAL
+					td
+						span.r {TOTAL_A_PAGAR}
+						br.clear
+						span.r 0.00
+						br.clear
+						span.r {TOTAL_A_PAGAR}
+				tr
+					td(colspan="2", height="60")
+				tr
+					td
+						strong.l TOTAL A PAGAR
+					td
+						strong.r {TOTAL_A_PAGAR}
+				tr
+					td(colspan="2")
+						hr
+				tr
+					td(colspan="2")
+						.r
+							form(action="https://www.adquiramexico.com.mx/clb/endpoint/sapal/", method="POST", target="_blank", name="frm_pago")#frm_pago
+								input(type="hidden", value="{TRANSM}", name="s_transm")#s_transm
+								input(type="hidden", value="{CUENTA}", name="c_referencia")#c_referencia
+								input(type="hidden", value="99", name="t_servicio")#t_servicio
+								input(type="hidden", value="{NOMBRE}", name="n_contrib")#n_contrib
+								input(type="hidden", value="{DIRECCION}", name="n_dir")#n_dir
+								label(for="t_impuesto") IMPORTE A PAGAR:&nbsp;
+								input(type="text", name="t_impuesto", value="{MONTO}")#t_impuesto.txt.tar.decimal
+								input(type="submit", value="REALIZAR PAGO").btn#btn_pagar
+						br.clear
+						.r
+							br
+							span {PAGO_EXCEDIDO}
+						.clear
+						#msj_impuesto.r
+							br
+							ul#ul_msj
+						.clear
+				tr
+					td(colspan="2")

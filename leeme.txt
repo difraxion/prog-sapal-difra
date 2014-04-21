@@ -1,0 +1,7 @@
+Instalación:
+
+1. Copiar el template y crear la base de datos.
+- Copiar el template en la carpeta del sitio.
+
+2. Confifuración
+- 

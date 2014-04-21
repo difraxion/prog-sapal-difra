@@ -1,0 +1,1 @@
+<div class="sac_dashboard"><h1 id="gral" class="tac wrapper">ACTIVACIÓN</h1><div id="gralBox"><div class="tac">{MSJ}</div></div></div>

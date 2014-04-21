@@ -1,0 +1,32 @@
+#sac
+	#gralCycle.cycle-slideshow(data-cycle-fx="scrollHorz", data-cycle-slides="> div", data-cycle-timeout="4000", data-cycle-speed="1000", data-cycle-swipe="true", data-cycle-pager=".cycle-pager", data-cycle-pager-template="<span></span>")
+		{BANNERS}
+	.cycle-pager.pa.tac.wrapper
+	{SUBCONTENT}
+	.wrapper
+		ul.ul_hoz.tac.option-sac
+			li#lisac1
+				span.db PAGA TU RECIBO
+			li.ml20#lisac2
+				span.db ESTADO DE CUENTA
+			li.ml20#lisac3
+				span.db HISTORIAL
+			li.ml20#lisac4
+				span.db REPORTES
+		ul.ul_hoz.tac.option-sac#opction-menu
+			li#lisacs1
+				{SESION}
+			li.ml20#lisacs2
+				a(href="{DIR}sac/tusaldo").db TU SALDO	
+				a(href="{DIR}sac/ultimosmovimientos").db ÚLTIMOS MOVIMIENTOS
+			li.ml20#lisacs3
+				a(href="{DIR}sac/registrosdeconsumos").db.pt15 REGISTRO DE CONSUMOS
+			li.ml20#lisacs4
+				a(href="{DIR}sac/reportes").db HACER UN REPORTE	
+				a(href="{DIR}sac/seguimiento").db SEGUIMIENTO A REPORTES
+		.alert-blue
+			.tac
+				strong INFORMACIÓN IMPORTANTE
+				br
+				| Si desea realizar algún otro tipo de reporte, o requiere información adicional que no encuentre aquí, favor de comunicarse al Área de Atención a Clientes de SAPAL en nuestra Línea Directa 073 donde con gusto le atenderemos.
+{SCRIPT}

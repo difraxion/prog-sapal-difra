@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"ids":["titulo","contenedor"],"table":{"crudTitle":"Proyecto Prioritarios","crudRowsPerPage":"20"},"filter":{"list":["id_pp","titulo","contenedor"],"actived":["titulo"],"atrr":{"titulo":{"alias":"T\u00edtulo"},"contenedor":{"alias":"Contenido"},"id_pp":{"alias":"id_pp"}}},"column":{"list":["id_pp","titulo","contenedor"],"actived":["titulo"],"atrr":{"titulo":{"alias":"T\u00edtulo"},"contenedor":{"alias":"Contenido"},"id_pp":{"alias":"id_pp"}}},"frm_type":"2"}

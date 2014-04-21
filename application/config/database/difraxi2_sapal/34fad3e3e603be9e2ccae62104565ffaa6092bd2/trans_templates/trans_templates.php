@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"ids":["Nombre"],"table":{"crudTitle":"trans_templates manager","crudRowsPerPage":"20"},"filter":{"list":["id","Nombre","timestamp"],"actived":["id","Nombre"],"atrr":{"id":{"alias":"id"}}},"column":{"list":["id","Nombre","timestamp"],"atrr":{"id":{"alias":"id"}},"actived":["id","Nombre"]},"frm_type":"2"}

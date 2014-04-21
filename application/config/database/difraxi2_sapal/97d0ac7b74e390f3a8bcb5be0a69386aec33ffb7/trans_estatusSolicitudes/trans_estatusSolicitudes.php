@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"ids":["estado"],"table":{"crudTitle":"Catalo de estatus de solicitudes","crudRowsPerPage":"20","crudOrderField":"id"},"filter":{"list":["id","estado"],"actived":["estado"],"atrr":{"estado":{"alias":"Estado"},"id":{"alias":"id"}}},"column":{"list":["id","estado"],"actived":["estado"],"atrr":{"estado":{"alias":"Estado"},"id":{"alias":"id"}}},"frm_type":"2"}

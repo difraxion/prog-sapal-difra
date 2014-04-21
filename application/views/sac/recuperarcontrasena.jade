@@ -1,0 +1,33 @@
+.sac_dashboard
+	h1.tac#gral.wrapper RECUPERA TU CONTRASEÑA
+	#gralBox
+		#paso1
+			.oheader_gral.db PASO 1
+			.inner.tac.recuperar
+				p Para recuperar su contraseña ingrese su usuario o número de cuenta.
+				p 
+					label(for="txt_usuario").dib.tar Usuario:&nbsp;
+					input(type="text", name="txt_usuario")#txt_usuario.txt.upper
+				p 
+					label(for="txt_nocuenta").dib.tar Número de cuenta:&nbsp;
+					input(type="text", name="txt_nocuenta", onkeyup="this.value=this.value.toUpperCase()")#txt_nocuenta.txt
+				p#msj1
+				p
+					label.dib
+					input(type="button", value="PASO SIGUIENTE").btn#btn_paso1	
+		#paso2
+			.oheader_gral.db PASO 2
+			.inner.tac.recuperar
+				p Por Favor, responda correctamente la pregunta.
+				p
+					label(for="slt_pregunta").dib.tar Pregunta:&nbsp;
+					select(name="slt_pregunta")#slt_pregunta.txt.upper
+						option
+						{PREGUNTAS}
+				p
+					label(for="txt_respuesta").dib.tar Respuesta:&nbsp;
+					input(type="text", name="txt_respuesta")#txt_respuesta.txt.upper				
+				p#msj2
+				p
+					label.dib
+					input(type="button", value="RECUPERAR CONTRASEÑA").btn#btn_paso2

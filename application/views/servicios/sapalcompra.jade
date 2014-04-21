@@ -1,0 +1,98 @@
+{MINI_LISTADO}
+#gralBox.sapalcompra
+	h1.tac COMPRAS Y PROVEEDORES
+	p.taj Nuestro organismo en su afán de cumplir con el compromiso social con los usuarios, brindando el mejor de los servicios, requiere para todos sus procesos, materiales que contribuyan a hacer más eficiente nuestra labor con la más alta calidad.
+	p.taj Es por ello que te estamos buscando a Ti, únete a nuestro distinguido Registro de Proveedores, y sé parte de un equipo con el que tendrás grandes beneficios.
+	p.taj Es muy fácil ser proveedor de Sapal los requisitos son los siguientes:
+	ul.list
+		li Forma de Inscripción.
+		li Constancia de Inscripción de la SHCP actualizada.
+		li Última declaración anual.
+		li Relación de principales clientes.
+		li Datos bancarios para transferencia (copia de carátula de estado de cuenta de la empresa).
+		li Acta constitutiva certificada y última modificación.
+		li Copia de identificación de representante legal (Que coincida con acta o poder notarial) por ambos lados.
+		li Estados financieros actualizados con antigüedad de 1 mes.
+		li Currículum original.
+	p.taj (En caso de ser foráneo enviar por paquetería.)
+	p.taj Y como complemento: Archivo PDF individual de la ficha técnica de cada uno de los productos que le vende a SAPAL.
+	.alert-gray
+		ul.tac.ul_hoz
+			li
+				a(href="{DIR}media/files/formato_inscripcion_padron.pdf", target="_blank").rfalse.dib DESCARGAR FORMULARIO DE INSCRIPCIÓN AL PADRÓN
+			li
+				a(href="{DIR}media/files/formato_inscripcion_padron.pdf", target="_blank").rfalse.dib
+					img(src="{DIR}img/pdf_56x56.png", alt="PDF")
+	form(action="{DIR}proveedores", method="post", enctype="multipart/form-data")#frm_proveedores
+		table.tb1
+			thead
+				tr
+					th.td_tal(colspan="2") INSCRÍBETE EN EL REGISTRO DE PROVEEDORES DE SAPAL
+			tbody
+				tr
+					td.td_taj(colspan="2") El sistema de Agua potable y Alcantarillado de León SAPAL, hace una cordial invitación a ti proveedor de materiales a unirte a nuestro Padrón de Proveedores. 
+				tr
+					td.td_taj(colspan="2")
+						ul.ul_hoz
+							li ¿Quieres conocer los principales productos que consume SAPAL?&nbsp;
+							li
+								a(href="{DIR}media/files/insumos.pdf", target="_blank").rfalse.dib
+									img(src="{DIR}img/pdf_30x29.png", alt="PDF")
+				tr
+					td
+						.td_tar
+							label(for="prov_nombre") NOMBRE:&nbsp;
+							input(type="text", name="prov_nombre")#prov_nombre.txt
+							br
+							label(for="prov_empresa") EMPRESA:&nbsp;
+							input(type="text", name="prov_empresa")#prov_empresa.txt
+							br
+							label(for="prov_email") E-MAIL:&nbsp;
+							input(type="text", name="prov_email")#prov_email.txt
+							br
+							label(for="prov_productos") PRODUCTOS:&nbsp;
+							textarea(name="prov_productos")#prov_productos.txt
+					td
+						.td_tal
+							label Subir catálogo de Productos.
+						br
+						.td_tar
+							label(for="file") Examinar:
+							input(type="file", name="file")#file	
+							br
+							label *Archivos permitidos no mayores a 2MB:
+							br
+							label Imágenes en JPG y PNG
+							br
+							label Documentos de Word, Excel y PowerPoint
+							br
+							label Archivos PDF
+							br
+							br
+							input(type="checkbox")
+							input(type="submit", value="ENVIAR").btn_enviar_prov
+						#status.tar 
+	.aviso-pdf.tac
+		.tac
+			h3 IMPORTANTE
+			p Para leer algunos documentos debes tener instalado Adobe Reader 
+				a(href="http://get.adobe.com/es/reader/", target="_blank") Descargar
+		
+	.alert-blue
+		.tac NOTA
+			br
+			| CADA DOCUMENTO SOLICITADO SERÁ ENTREGADO EN FORMATO PDF LLEVANDO CPMP NOMBRE DEL ARCHIVO EL NOMBRE DEL DOCUMENTO PRESENTADO. LA INFORMACIÓN SE ACTUALIZA MENSUALMENTE.
+	h2.tal ¿Tu material es de Nueva Tecnología?
+	p.taj Acércate a nosotros para hacer las pruebas requeridas y así poder integrar tu tecnología de vanguardia en nuestros procesos.
+	p.tal Comunícate
+		br
+		| Jefatura de Compras SAPAL
+		br
+		| 788 78 00 ext. 148
+		br
+		| 788 78 41 y 43
+		br
+		a(href="mailto:mjimenez@sapal.gob.mx") mjimenez@sapal.gob.mx
+a(href="{DIR}servicios").lnk-back.l.db.pr Regresar al menú principal
+	span.pa.db
+.clear

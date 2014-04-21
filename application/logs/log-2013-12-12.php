@@ -1,0 +1,9 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-12-12 16:42:18 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:48) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-12 16:42:37 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:48) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-12 16:42:41 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:48) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-12 16:42:41 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:48) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-12 16:46:58 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-12 16:47:12 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-12 16:47:31 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675

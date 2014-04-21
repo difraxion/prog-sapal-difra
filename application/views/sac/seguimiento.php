@@ -1,0 +1,1 @@
+<div class="sac_dashboard"><h1 id="gral" class="tac wrapper reportes">{TITLE}</h1><div id="gralBox"><h1 class="tac">TU ENLACE DIRECTO CON SAPAL</h1><p>&nbsp;</p><div class="tac"><img src="{DIR}img/073.jpg" alt="073"/></div></div></div>

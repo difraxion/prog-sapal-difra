@@ -1,0 +1,10 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-12-14 12:51:58 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:48) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:53:00 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:48) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:53:14 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:53:54 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:54:20 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:54:45 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:55:20 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675
+ERROR - 2013-12-14 12:55:38 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at C:\AppServ\www\sapal\www\application\config\routes.php:49) C:\AppServ\www\sapal\www\system\libraries\Session.php 675

@@ -1,0 +1,1174 @@
+@import "classes"
+negro = #000000
+oscuro = #303030
+blanco = #ffffff
+azul = #017cba
+azul_fuerte = #0e3b71
+verde = #00b093
+verde2 = #00bb39
+gris = #b1b1b1
+gris2 = #c1c0c0
+brandond_bold(siz)
+	font normal siz 'brandon_grotesquebold'
+brandond_boldi(siz)
+	font normal siz 'brandon_grotesquebold_italic'
+brandond_black(siz)
+	font normal siz 'brandon_grotesqueblack'
+brandond_blacki(siz)
+	font normal siz 'brandon_grotesqueblack_italic'
+brandond_light(siz)
+	font normal siz 'brandon_grotesquelight'
+brandond_lighti(siz)
+	font normal siz 'brandon_grotesquelight_italic'
+brandond_medium(siz)
+	font normal siz 'brandon_grotesquemedium'
+brandond_mediumi(siz)
+	font normal siz 'brandon_grotesqueMdIt'
+brandond_regular(siz)
+	font normal siz 'brandon_grotesque_regularRg'
+brandond_regulari(siz)
+	font normal siz 'brandon_grotesqueRgIt'
+brandond_thin(siz)
+	font normal siz 'brandon_grotesquethin'
+brandond_thini(siz)
+	font normal siz 'brandon_grotesquethin_italic'
+monserrat_bold(siz)
+	font normal siz 'montserratbold'
+monserrat_regular(siz)
+	font normal siz 'montserratregular'
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------- INICIO ---------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#inicio
+	.cycle-slideshow
+		width 100%
+		height 423px
+		.item-slide
+			width 100%
+			height 423px
+			a
+				width 100%
+				height 423px
+			.label
+				color blanco
+				h1, h2
+					font-weight normal
+					margin 0
+					left 10px
+				h1
+					text-shadow 0 0 4px #a09c9c
+					font-family 'brandon_grotesqueblack'
+					font-size 4em
+					line-height 60px
+					top 120px
+					text-transform uppercase
+				h2
+					font-family 'brandon_grotesquelight'
+					top 240px
+					font-size 2em
+					line-height 36px
+	#enlaces
+		margin 15px 0
+		li
+			margin 9px
+		a
+			width 295px
+			height 146px
+			border gris2 solid 1px
+			background blanco
+			transition(all 0.3s ease-in-out)
+			span.img
+				width 90px
+				height 89px	
+				margin-top 10px
+				background-color transparent
+				background-repeat no-repeat
+				background-position -90px 50%
+			span.pa
+				width 100%
+				bottom 15px
+				font-family 'brandon_grotesquebold'
+				color gris2
+				font-size 1em
+				transition(all 0.3s ease-in-out)
+			&:hover
+				background #2cb2ba
+				border #2cb2ba solid 1px
+				span.img
+					background-position 0 50%
+				span.pa 
+					color blanco
+		#lnk-proyectos
+			span.img
+				background-image url(../img/inicio/ico-prioritarios.png)
+		#lnk-pago
+			span.img
+				background-image url(../img/inicio/ico-enlinea.png)
+		#lnk-cultura
+			span.img
+				background-image url(../img/inicio/ico-cultura.png)
+	#mas
+		width 31px
+		height 31px
+		background #f9f9f9 url(../img/blue-arrow-down.png) no-repeat 50% 50%
+		margin-bottom 15px
+		border-radius 50%
+	.top-inicio
+		h1
+			font-size 2.5em
+			font-family 'brandon_grotesqueblack'
+			color oscuro
+			border-bottom #de2020 solid 1px
+			padding-left 25px
+			margin-bottom 15px
+			background transparent url(../img/black-arrow-right.png) no-repeat 10px 50%
+	.noticias
+		a
+			overflow hidden
+		.top-news
+			width 621px
+			height 372px
+			margin-left 10px
+			border #c1c0c0 solid 1px
+			span.txt
+				width 601px
+			span.more
+				bottom 10px
+				right 10px
+				color blanco
+				font-family 'montserratregular'
+				font-size 1em
+				transition(all 0.3s ease-in-out)
+				&:hover
+					text-decoration underline
+		.ul_news
+			margin-right 10px
+			li
+				border #c1c0c0 solid 1px
+				list-style-type none
+				&:first-child
+					margin-bottom 20px
+				a
+					width 301px
+					height 176px
+					span.txt
+						width 281px
+					span.date
+						color blanco
+						font-family 'montserratregular'
+						font-size .9em
+						top 7px
+						right 10px
+		span.img
+			width 100%
+			height 100%
+			transition(all 0.3s ease-in-out)
+		span.txt
+			display none
+			padding 10px
+			font-size 1em
+			bottom 0
+			color blanco
+			font-family 'montserratregular'
+			background transparent url(../img/fade-blue.png) repeat
+	.servicios
+		margin 10px 0
+		li
+			margin-left 20px
+			&:first-child
+				margin-left 0
+		a
+			width 301px
+			height 193px
+			overflow hidden
+			span.pa
+				width 271px
+				padding 10px
+				bottom -45px
+				font-family 'montserratregular'
+				color #007cbb
+				font-size 1.2em
+				background transparent url(../img/fade-white.png) repeat
+				transition(all 0.2s ease-in-out)
+			&:hover
+				span.pa 
+					width 281px
+					bottom 0
+	.redes
+		margin 10px 0 30px 0
+		li
+			margin-left 20px
+			&:first-child
+				margin-left 0
+			img
+				width 301px
+				height 350px
+	.lnk-climapp
+		width 123px
+		height 43px
+		top 29px
+	#lnk-climapp-gplay
+		right 32px
+	#lnk-climapp-astore
+		right 182px
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------- SERVICIOS ------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#servicios
+	#ul_servicios
+		margin 30px 0 20px 0
+		a
+			width 300px
+			height 229px
+			margin 10px
+			color blanco
+			span.fade, span.ico
+				width 100%
+				height 100%
+				top 0
+				left 0
+				z-index 1
+			span.screen
+				width 100%
+				height 100%
+				bottom 0
+				left 0
+				z-index 2
+			span.ico
+				background-color transparent
+				background-repeat no-repeat
+				background-position 50% 58px
+				transition(all 0.3s ease-in-out)
+				z-index 3
+			span.txt
+				font-family 'brandon_grotesquebold'
+				font-size 1em
+				width 280px
+				bottom 0
+				padding 10px
+				z-index 4
+		#lnk-agua
+			span.fade
+				background transparent url(../img/servicios/fade1.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-agua.png)
+			span.screen
+				background #20cbd4
+		#lnk-saneamiento
+			span.fade
+				background transparent url(../img/servicios/fade2.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-saneamiento.png)
+			span.screen
+				background #00adbc
+		#lnk-alcantarillado
+			span.fade
+				background transparent url(../img/servicios/fade3.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-alcantarillado.png)
+			span.screen
+				background #62b1bd
+		#lnk-sucursales
+			span.fade
+				background transparent url(../img/servicios/fade4.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-sucursales.png)
+			span.screen
+				background #00b289 
+		#lnk-requisitos
+			span.fade
+				background transparent url(../img/servicios/fade5.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-requisitos.png)
+			span.screen
+				background #6ccdb3
+		#lnk-cuotas
+			span.fade
+				background transparent url(../img/servicios/fade6.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-cuotas.png)
+			span.screen
+				background #007a61
+		#lnk-reglamentos
+			span.fade
+				background transparent url(../img/servicios/fade7.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-reglamentos.png)
+			span.screen
+				background #009579
+		#lnk-suspension
+			span.fade
+				background transparent url(../img/servicios/fade8.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-suspension.png)
+			span.screen
+				background #30d9c4
+		#lnk-compra
+			span.fade
+				background transparent url(../img/servicios/fade9.png) repeat
+			span.ico
+				background-image url(../img/servicios/ico-compras.png)
+			span.screen
+				background #88e2d2
+	.view-serv
+		background #f5f5f5
+		border #e0e0e0 solid 1px
+		width 930px
+		margin 30px auto
+		h1
+			font-size 2.2em
+			font-family 'brandon_grotesqueblack'
+			color oscuro
+			border-bottom #de2020 solid 1px
+			margin 10px 0 20px 0
+			line-height 2.5em
+		h2
+			color #696969
+			font-family 'montserratregular'
+			margin 0
+		.ul_hoz
+			li
+				width 439px
+				vertical-align top
+				img
+					width 439px
+					height auto
+				p
+					margin 10px 20px 20px 20px!important
+					line-height 30px
+				.pie
+					background #00abbf
+					color blanco
+					padding 10px
+					font-family 'montserratregular'
+					font-size 1em
+					margin-top -5px
+		p
+			color #696969
+			font-size .8em
+			font-family 'montserratregular'
+			margin 20px
+			line-height 26px
+	#ul_mini_listado
+		padding-top 20px
+		li
+			width 87px
+			height 72px
+			border #c2c2c2 solid 1px
+			margin 0 8px
+			padding-top 14px
+			text-align center
+			cursor pointer
+			transition(all 0.2s ease-in-out)
+			&:hover
+				height 106px!important
+				.min-serv
+					background-position 0px 50%
+		.activate
+			height 106px!important
+			.min-serv
+				background-position 0px 50%
+		.min-serv
+			display inline-block
+			width 55px
+			height 56px
+			background-color transparent 
+			background-repeat no-repeat
+			background-position -55px 50%
+			background-size cover
+		.min-agua
+			background-image url(../img/servicios/ico-mini-agua.png)
+		.min-saneamiento
+			background-image url(../img/servicios/ico-mini-saneamiento.png)
+		.min-alcantarillado
+			background-image url(../img/servicios/ico-mini-alcantarillado.png)
+		.min-sucursales
+			background-image url(../img/servicios/ico-mini-sucursales.png)
+		.min-requisitos
+			background-image url(../img/servicios/ico-mini-requisitos.png)
+		.min-cuotas
+			background-image url(../img/servicios/ico-mini-cuotas.png)
+		.min-reglamentos
+			background-image url(../img/servicios/ico-mini-reglamentos.png)
+		.min-suspension
+			background-image url(../img/servicios/ico-mini-suspension.png)
+		.min-compra
+			background-image url(../img/servicios/ico-mini-compras.png)
+		.li-aguapotable
+			&:hover
+				background #20cbd4
+				border #20cbd4 solid 1px
+		.li-aguapotable.activate
+				background #20cbd4
+				border #20cbd4 solid 1px
+		.li-saneamiento
+			&:hover
+				background #00adbd
+				border #00adbd solid 1px
+		.li-saneamiento.activate
+				background #00adbd
+				border #00adbd solid 1px
+		.li-alcantarillado
+			&:hover
+				background #62b1bd
+				border #62b1bd solid 1px
+		.li-alcantarillado.activate
+				background #62b1bd
+				border #62b1bd solid 1px
+		.li-sucursales
+			&:hover
+				background #00b289
+				border #00b289 solid 1px
+		.li-sucursales.activate
+				background #00b289
+				border #00b289 solid 1px
+		.li-requisitos
+			&:hover
+				background #6ccdb3
+				border #6ccdb3 solid 1px
+		.li-requisitos.activate
+				background #6ccdb3
+				border #6ccdb3 solid 1px
+		.li-cuotas
+			&:hover
+				background #007a61
+				border #007a61 solid 1px
+		.li-cuotas.activate
+				background #007a61
+				border #007a61 solid 1px
+		.li-reglamentos
+			&:hover
+				background #009579
+				border #009579 solid 1px
+		.li-reglamentos.activate
+				background #009579
+				border #009579 solid 1px
+		.li-suspension
+			&:hover
+				background #30d9c4
+				border #30d9c4 solid 1px
+		.li-suspension.activate
+				background #30d9c4
+				border #30d9c4 solid 1px
+		.li-compras
+			&:hover
+				background #88e2d2
+				border #88e2d2 solid 1px
+		.li-compras.activate
+				background #88e2d2
+				border #88e2d2 solid 1px
+	.mini-title
+		width 929px
+		margin 0 auto 0 auto
+		h1
+			margin 0
+			color blanco
+			font-size 3em
+			font-family 'brandon_grotesquebold'
+			font-weight normal
+			padding 45px 0 45px 112px
+		h1.ico-saneamiento
+			background transparent url(../img/servicios/ico-saneamiento.png) no-repeat 0 50%
+		h1.ico-aguapotable
+			background transparent url(../img/servicios/ico-agua.png) no-repeat 0 50%
+		h1.ico-alcantarillado
+			background transparent url(../img/servicios/ico-alcantarillado.png) no-repeat 0 50%
+		h1.ico-sucursales
+			background transparent url(../img/servicios/ico-sucursales.png) no-repeat 0 50%
+		h1.ico-requisitos
+			background transparent url(../img/servicios/ico-requisitos.png) no-repeat 0 50%
+		h1.ico-cuotas
+			background transparent url(../img/servicios/ico-cuotas.png) no-repeat 0 50%
+		h1.ico-reglamentos
+			background transparent url(../img/servicios/ico-reglamentos.png) no-repeat 0 50%
+		h1.ico-suspension
+			background transparent url(../img/servicios/ico-suspension.png) no-repeat 0 50%
+		h1.ico-compras
+			background transparent url(../img/servicios/ico-compras.png) no-repeat 0 50%
+	.mini-title-saneamiento
+		background #00adbd
+	.mini-title-aguapotable
+		background #20cbd4
+	.mini-title-alcantarillado
+		background #62b1bd
+	.mini-title-sucursales
+		background #00b289
+	.mini-title-requisitos
+		background #6ccdb3
+	.mini-title-cuotas
+		background #007a61
+	.mini-title-reglamentos
+		background #009579
+	.mini-title-suspension
+		background #30d9c4
+	.mini-title-compras
+		background #88e2d2
+.alcantarillado
+	ul.list
+		padding 0!important
+//---------------------------------------------------------------------------------------------------
+//----------------------------------- PROYECTOS PRIORITARIOS ----------------------------------------
+//---------------------------------------------------------------------------------------------------
+#pp
+	#nav
+		position relative
+		width 928px
+		margin 25px auto 0 auto
+		background #2cb2ba
+		border #e0e0e0 solid 1px
+		overflow hidden
+		h1
+			color blanco
+			text-transform uppercase
+			brandond_bold(3em)
+			padding 46px 100px
+			margin 0!important
+		.lc, .rc
+			position absolute
+			top 0
+			height 100%
+			width 170px
+			background #f5f5f5
+			border-radius 50%
+			span
+				position absolute
+				top 50%
+				margin-top -24px
+				display inline-block
+				color oscuro
+				monserrat_regular(.7em)
+				background-color transparent
+				background-repeat no-repeat
+		.lc
+			left -85px
+			span
+				right 14px
+				padding 16px 0 16px 23px
+				background-position 0 50%
+				background-image url(../img/pp-larrows.png)
+		.rc
+			right -85px
+			span
+				left 7px
+				padding 16px 23px 16px 0
+				background-position 49px 50%
+				background-image url(../img/pp-rarrows.png)
+	#ul-listado-pp
+		li
+			list-style-type none
+			margin 15px 0
+			a
+				background #2cb2ba
+				padding 25px 0
+				transition(all 0.3s ease-in-out)
+				span
+					color blanco
+					brandond_bold(2em)
+				&:hover
+					background #30d9c4
+//---------------------------------------------------------------------------------------------------
+//-------------------------------------- ¿ QUÉ ES SAPAL ? -------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#quees
+	#gralBox
+		h1
+			margin-top 0!important
+			padding-bottom 25px
+	.lrow
+		width 584px!important
+	.rrow
+		width 282px!important
+//---------------------------------------------------------------------------------------------------
+//-------------------------------------- CONSEJO DIRECTIVO ------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#consejodirectivo
+	#gralBox
+		h2
+			margin 0!important
+		p
+			margin 0 25px 20px 25px!important
+//---------------------------------------------------------------------------------------------------
+//-------------------------------------- HISTORIA, MISIÓN Y VISIÓN ----------------------------------
+//---------------------------------------------------------------------------------------------------
+#hmv
+	#gralBox
+		h1
+			margin-top 0!important
+			padding-bottom 25px
+//---------------------------------------------------------------------------------------------------
+//------------------------------------------- LICITACIONES ------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#licitaciones
+	#gralBox
+		h1
+			margin-top 0!important
+			padding-bottom 25px
+		ul
+			width 100%
+			text-align center
+			padding 10px 0
+			&:nth-child(odd)
+				background #eaeaea
+				border #e0e0e0 solid 1px
+		.r1
+			width 68px
+			color #434343
+			monserrat_regular(1.2em)
+		.r2
+			width 570px
+			color #434343
+			monserrat_regular(1.1em)
+		.r3
+			width  298px
+			color #686868
+			monserrat_regular(1em)
+		.thead
+			margin-bottom 25px
+			monserrat_regular(1.3em)
+			background #7b7b7b
+			.r1, .r2, .r3
+				color blanco!important
+//---------------------------------------------------------------------------------------------------
+//------------------------------------------- ORGANIGRAMA -------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#organigrama
+	#gralBox
+		h1
+			margin-top 0!important
+			padding-bottom 25px
+//---------------------------------------------------------------------------------------------------
+//------------------------------------------- DESCARGAS ---------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#descargas
+	#gralBox
+		h1
+			margin-top 0!important
+			padding-bottom 25px
+		.pr
+			width 908px
+			margin 25px auto
+			border-bottom #e0e0e0 solid 1px
+			padding-bottom 25px
+			&:last-child
+				padding-bottom 0!important
+				border none!important
+		.rrow
+			width 569px!important
+			h2
+				&:hover
+					text-decoration underline
+		.lrow
+			width 267px!important
+		.controls
+			position absolute
+			right 15px
+			bottom 15px
+			a
+				width 18px
+				height 17px
+				margin-right 5px
+				background-color transparent
+				background-repeat no-repeat
+				background-image url(../img/img-controls.jpg)
+			.a_pdf
+				background-position 0 0
+			.a_print
+				background-position -18px 0
+			.a_mail
+				background-position -36px 0
+		.a_download
+			a
+				display block
+				background-image url(../img/ico-download.png)
+				background-position 0 0
+//---------------------------------------------------------------------------------------------------
+//---------------------------------- SUCURSALES Y SERVICIOS -----------------------------------------
+//---------------------------------------------------------------------------------------------------
+.sucursales
+	h1, h3, h4, span, strong
+		color #686868!important
+	h1	
+		font normal 1.5em 'montserratregular'!important
+		text-transform none!important
+		margin 15px 0!important
+		padding 0 25px 5px 25px!important
+	h3
+		margin 0 0 0 15px!important
+		font-family 'montserratbold'!important
+		font-weight normal
+	label
+		font normal .7em 'montserratregular'!important
+		color #a4a4a4
+	span , strong
+		font-family 'montserratregular'!important
+		font-size .9em
+		margin-left 15px
+	ul
+		margin 0
+		padding 0
+		li
+			list-style-type none
+			padding-left 5px!important
+			margin-bottom 10px
+			background transparent url(../img/bull.png) 10px 5px no-repeat
+			background-size 4px 4px
+	.el
+		li
+			margin-bottom 15px!important
+	.sl
+		li
+			margin-bottom 5px!important
+	.l, .r
+		width 439px
+//---------------------------------------------------------------------------------------------------
+//---------------------------------- AVISOS DE SUSPENSIÓN -------------------------------------------
+//---------------------------------------------------------------------------------------------------
+.suspension
+	h1
+		margin-top 0!important
+		padding-bottom 25px
+	table
+		width 100%
+		th
+			background #7b7b7b
+			color blanco
+			monserrat_regular(1.5em)
+			padding 20px 10px
+		td
+			padding 10px
+			vertical-align top
+			monserrat_regular(.9em)
+			color #686868
+		span
+			display block 
+		.bl
+			border-left #7b7b7b solid 1px
+		.br
+			border-right #7b7b7b solid 1px
+//---------------------------------------------------------------------------------------------------
+//---------------------------------- COMPRAS Y PROVEEDORES ------------------------------------------
+//---------------------------------------------------------------------------------------------------
+.sapalcompra
+	h1
+		margin-top 0!important
+		padding-bottom 25px
+	.td_tal
+		text-align left!important
+	.td_taj
+		text-align justify!important
+	.td_tar
+		text-align right!important
+	td
+		width 50%
+		padding 10px!important
+		line-height 21px!important
+		vertical-align top!important
+	.txt
+		width 286px
+		margin-bottom 10px
+		border #282828 solid 1px
+	textarea
+		height 75px
+		resize none
+	.btn_enviar
+		color blanco
+		background #017cba
+		border none
+		monserrat_regular(.9em)
+		padding 7px 35px
+	.aviso-pdf
+		monserrat_regular(0.83em)
+		background #ec5252
+		padding 15px 17px
+		color blanco
+		margin-top 20px
+		.tac
+			padding 15px
+			border 1px solid blanco
+			text-transform uppercase
+			p
+				color blanco!important
+			h3
+				text-transform uppercase
+				margin 0 0 8px 0
+			a
+				color #aa2e2e
+				transition(all 0.5s ease-in-out)
+	.alert-blue
+		background #27b4fb
+		color blanco
+		padding 15px 17px
+		margin 20px 0 20px 0
+		.tac
+			padding 15px
+			border blanco solid 1px
+			text-transform uppercase
+			monserrat_regular(.9em)
+	.ul_hoz
+		li
+			vertical-align middle
+	.alert-gray
+		margin 20px 0 20px 0
+		monserrat_regular(.9em)
+		background transparent url(../img/bkg-gray.png) repeat-x 0 50%
+		a
+			margin-left 10px
+			color blanco	
+//---------------------------------------------------------------------------------------------------
+//------------------------------------------- NOTICIAS ----------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#noticias
+	h1
+		margin-top 0!important
+		padding-bottom 25px
+	h3
+		color blanco
+		width 352px
+		padding 7px 0 7px 10px
+		monserrat_regular(1.3em)
+	h4
+		monserrat_regular(1.2em)
+		color #686868
+		margin-bottom 5px
+	p, strong
+		font-size .85em!important
+	.h31
+		background #49b29e
+		margin-top 0!important
+	.h32
+		background #49c6a9
+	.h33
+		background #95d9c7
+	.h34
+		background #6be1d3
+	.lrow
+		width 362px!important
+		padding-right 15px
+		margin-left 0!important
+		border-right #e0e0e0 solid 1px
+		p
+			width 340px
+			cursor pointer
+			transition(all 0.3s ease-in-out)
+			&:hover
+				color #4984ad
+	.ml10
+		margin-left 10px!important	
+		a
+			color azul
+			transition(all 0.3s ease-in-out)
+			&:hover
+				color azul_fuerte	
+	.rrow
+		width 514px!important
+		.ul_hoz
+			li
+				margin-right 5px
+	.controls
+		margin 0 25px 10px 0
+		a
+			width 18px
+			height 17px
+			margin-right 5px
+			background-color transparent
+			background-repeat no-repeat
+			background-image url(../img/img-controls.jpg)
+		.a_pdf
+			background-position 0 0
+		.a_print
+			background-position -18px 0
+		.a_mail
+			background-position -36px 0
+	a.dib.l, a.dib.r
+		monserrat_regular(.9em)
+		color azul
+		transition(all 0.3s ease-in-out)
+		&:hover
+			color azul_fuerte
+//---------------------------------------------------------------------------------------------------
+//------------------------------------------- SAC ---------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#sac
+	h1
+		margin-top 0!important
+		padding-bottom 25px
+	.alert-blue
+		background #27b4fb
+		color blanco
+		padding 15px 17px
+		margin 30px 0 20px 0
+		.tac
+			padding 15px
+			border blanco solid 1px
+			text-transform uppercase
+			monserrat_regular(.9em)
+	.title-blue
+		width 928px!important
+		background #017cba
+		color blanco
+		brandond_bold(2.5em)
+		padding 10px 0
+		margin-top 15px
+	.title-blue.small
+		font-size 1.5em!important
+		padding 5px 0!important
+	p
+		strong 
+			color #282828!important
+			text-transform uppercase
+			font-size .8em
+	.ul_hoz
+		li
+			width 150px
+			vertical-align middle
+			border #e0e0e0 solid 1px
+			a
+				color blanco
+				brandond_bold(.75em)
+		.li1
+			background #00b6c3
+			height 46px
+			padding-top 10px
+		.li2
+			background #16c809
+			height 46px
+			padding-top 10px
+		.li3
+			background #9a87e7
+			height 46px
+			padding-top 10px
+		.li4
+			background #efbf0f
+			height 56px
+		.li5
+			background #ec5fdf
+			height 41px
+			padding-top 15px
+		.li6
+			background #ff6565
+			height 41px
+			padding-top 15px
+	.wrapper
+		width 928px!important
+		padding-top 0!important
+		.tabs
+			a
+				width 45%!important
+		.cont_sesion
+			background #eaeaea
+			width 867px
+			margin 0 auto
+			border #e0e0e0 solid 1px
+	#opction-menu
+		li
+			height 68px
+	.option-sac
+		li
+			width 215px
+			text-align center
+			vertical-align bottom
+			a, span
+				margin 10px 0
+			a
+				&:hover
+					text-decoration underline
+			span
+				color blanco
+				brandond_bold(.8em)
+	#lisac1
+		background #00b6c3
+	#lisac2
+		background #17c70a
+	#lisac3
+		background #9b87e8
+	#lisac4
+		background #eebf0f
+	#lisacs1
+		background #02959f
+	#lisacs2
+		background #0e9a03
+	#lisacs3
+		background #7063ab
+	#lisacs4
+		background #caa317
+	.pt15
+		padding-top 15px
+	.oheader_gral
+		monserrat_regular(.9em)
+		padding 15px
+		color blanco
+		background azul
+		margin 0 20px
+	.inner
+		padding 25px
+		background #eaeaea
+		margin 0 20px
+	.option-login
+		width 892px
+		margin 10px auto
+		border #e0e0e0 solid 1px
+		.oheader
+			monserrat_regular(.9em)
+			padding 15px
+			color blanco
+			background azul
+			cursor pointer
+			transition(all 0.3s ease-in-out)
+			&:hover
+				background #51849f
+		.form
+			padding 25px
+			display none
+			background #eaeaea
+			p
+				margin 0!important
+			label, span, input
+				color #282828!important
+			select 
+				text-transform uppercase
+			.txt
+				padding 3px
+				border #282828 solid 1px
+				width 286px	
+			.txt-error
+				border Red solid 1px!important
+			.btn
+				border none
+				background azul
+				color blanco!important
+				monserrat_regular(1em)
+				padding 5px 10px
+				transition(all 0.3s ease-in-out)
+				&:hover
+					background azul_fuerte
+		.activate
+			display block!important
+	#option-login
+		label
+			display inline-block
+			width 110px
+			text-align right
+			margin 5px
+		input[type="text"], input[type="password"]
+			margin 0 10px 0 5px
+	#option-nusario
+		label
+			display inline-block
+			width 300px
+			margin 5px
+	#msjlogin
+		padding 10px 0 0 128px
+	#msj_registrarse
+		monserrat_regular(1em)
+		text-transform uppercase
+.sac_dashboard
+	padding-top 20px
+	h1
+		brandond_bold(2.5em)
+		margin-bottom 0!important
+		color blanco
+	h1#gral
+		background #00b6c3
+		padding 10px 0!important	
+	h2
+		padding 0!important
+		margin 20px 0!important
+	.lnk_descarga, label, hr
+		color #007cb8
+	hr
+		background #007cb8
+		height 2px
+		border 0
+	.lnk_descarga
+		monserrat_regular(1.5em)
+		&:hover
+			text-decoration underline
+	.l
+		margin-left 15px
+		line-height 18px
+	.r
+		margin-right 15px
+		line-height 18px		
+	.txt
+		border gris2 solid 1px
+		padding 3px
+	.btn
+		background azul
+		color blanco
+		border none
+		margin-left 10px
+		padding 4px 10px
+		transition(all 0.3s ease-in-out)
+		&:hover
+			background azul_fuerte
+	ul#ul_msj
+		li
+			display inline-block
+			vertical-align middle
+			padding 3px
+	.recuperar
+		label
+			width 135px
+		input[type="text"]
+			width 194px!important
+	#paso2
+		display none
+	.reportes
+		background-color #eebf0f!important
+//---------------------------------------------------------------------------------------------------
+//------------------------------------- CULTURA DEL AGUA --------------------------------------------
+//---------------------------------------------------------------------------------------------------
+#cultura
+	.mini-title
+		width 960px
+		margin 25px auto 7px auto
+		h1
+			margin 0
+			color blanco
+			font-size 3em
+			font-family 'brandon_grotesquebold'
+			font-weight normal
+			padding 45px 0 45px 112px
+			background #8d67cc url(../img/cultura/ico-cultura.png) no-repeat 190px 50%
+	.wrapper
+		ul
+			text-align center
+			border gris solid 1px
+		li
+			width 440px
+			vertical-align middle
+			padding-left 15px
+			padding-right 15px
+			p, h3
+				color blanco
+				text-align left!important
+			p
+				font-family montserratregular!important
+				font-size 1em
+			h3
+				monserrat_regular(1.2em)
+	#naranja
+		background #ffa509
+		margin-bottom 7px
+		padding-top 10px
+		padding-bottom 15px
+	#verde
+		background #638b18
+		margin-bottom 7px
+		padding-top 30px
+		padding-bottom 30px
+		li
+			&:first-child
+				width 400px!important
+			&:last-child
+				width 480px!important
+	#rosa
+		background #eb1c74
+		margin-bottom 7px
+		padding-top 10px
+		padding-bottom 10px
+	#azul
+		background #00add8
+		margin-bottom 7px
+		padding-top 15px
+		padding-bottom 15px

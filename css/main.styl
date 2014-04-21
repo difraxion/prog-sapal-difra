@@ -1,0 +1,548 @@
+@import "classes"
+@import "fonts/stylesheet.css"
+@import "stylesheet2.css"
+@import "stylesheet1.css"
+negro = #000000
+oscuro = #303030
+blanco = #ffffff
+azul = #017cba
+azul_fuerte = #0e3b71
+verde = #00b093
+verde2 = #00bb39
+gris = #b1b1b1
+gris2 = #c1c0c0
+brandond_bold(siz)
+	font normal siz 'brandon_grotesquebold'
+brandond_boldi(siz)
+	font normal siz 'brandon_grotesquebold_italic'
+brandond_black(siz)
+	font normal siz 'brandon_grotesqueblack'
+brandond_blacki(siz)
+	font normal siz 'brandon_grotesqueblack_italic'
+brandond_light(siz)
+	font normal siz 'brandon_grotesquelight'
+brandond_lighti(siz)
+	font normal siz 'brandon_grotesquelight_italic'
+brandond_medium(siz)
+	font normal siz 'brandon_grotesquemedium'
+brandond_mediumi(siz)
+	font normal siz 'brandon_grotesqueMdIt'
+brandond_regular(siz)
+	font normal siz 'brandon_grotesque_regularRg'
+brandond_regulari(siz)
+	font normal siz 'brandon_grotesqueRgIt'
+brandond_thin(siz)
+	font normal siz 'brandon_grotesquethin'
+brandond_thini(siz)
+	font normal siz 'brandon_grotesquethin_italic'
+monserrat_bold(siz)
+	font normal siz 'montserratbold'
+monserrat_regular(siz)
+	font normal siz 'montserratregular'
+body
+	background #f8f6f9
+a
+	text-decoration none
+ul, li
+	margin 0
+	padding 0
+.clear
+	clear both
+.wrapper, .content
+	margin 0 auto
+	position relative
+.wrapper
+	width 960px
+.content
+	max-width 1600px
+	background blanco
+	box-shadow(0px 1px 5px #f6f6f6)
+.l
+	float left
+.r
+	float right
+.dib
+	display inline-block
+.db
+	display block
+.hide
+	display none
+.pr
+	position relative
+.pa
+	position absolute
+.pf
+	position fixed
+.tac
+	text-align center
+.tal
+	text-align left
+.tar
+	text-align right
+.taj
+	text-align justify
+.ul_hoz
+	li
+		display inline-block
+.bkg-cover
+	background-color transparent
+	background-size cover
+	-ms-behavior url(backgroundsize.min.htc)
+.page-top
+	margin-top -21px
+.mt15
+	margin-top 15px
+.mt25
+	margin-top 25px
+.ml20
+	margin-left 20px
+.ROJO, .rojo
+	color red!important
+.upper
+	text-transform uppercase
+.pointer
+	cursor pointer
+	&:hover
+		li
+			text-decoration underline!important
+.forcenter
+	width 900px
+	margin 0 auto
+.lnkup
+	margin 20px 20px 0 0!important
+.lnkbottom
+	margin 0 20px 20px 0!important
+.txt_date
+	background #ffffff url(../img/Calendar_16x16.png) no-repeat 3px 50%
+	width 138px!important
+	padding 3px 3px 3px 23px!important
+.f08
+	font-size 0.8em!important
+.h82
+	height 82px
+.f1
+	font-size 1em!important
+.tbl-dir
+	padding 0!important
+	td
+		padding 5px!important
+		font normal 1em montserratregular!important
+.lnk_gral
+	font-family 'montserratregular'
+	font-size 1.1em
+	color #696969
+	margin 20px 20px 0 0
+	padding-left 30px
+	background transparent url(../img/users.png) no-repeat 0 50%
+	&:hover
+		text-decoration underline
+.lnk_fback
+	display none
+	height 20px
+	padding 7px 15px 7px 20px
+	color #696969
+	background transparent url(../img/back.png) no-repeat 0 50%
+	&:hover
+		text-decoration underline
+.tti
+	text-transform initial!important	
+.tdu
+	border-bottom #696969 solid 1px!important
+	padding 0px 5px 10px 5px!important
+	margin-bottom 5px!important
+.mt5
+	margin-top 5px!important
+.ul_filtros
+	li
+		width 190px
+		padding 5px!important
+		font-size .8em!important
+		text-align left
+.aw
+	color #ffffff
+	&:hover
+		text-decoration underline
+//-------------------------------------------------------------------------------------------------------------
+//---------------------------------------- TEMPLATE -----------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------
+header
+	.logo
+		margin 10px 0
+	ul.r
+		li
+			vertical-align middle
+			margin 0 10px
+			font-family 'brandon_grotesque_regularRg'
+			font-size .9em
+			span
+				padding 0 4px
+				color verde
+				border-left verde solid 1px
+				&:first-child
+					border none
+			a
+				span
+					color azul
+				&:hover
+					text-decoration underline
+	nav
+		ul
+			padding 25px 0 8px 35px
+		li
+			padding 0 19px
+			background transparent url(../img/bull.jpg) no-repeat right 10px
+			&:first-child
+				padding-left 0
+		li.last-child 
+			padding-right 0
+			background none!important
+		a
+			font-family 'brandon_grotesquemedium'
+			font-size 1em
+			color oscuro
+			transition(color 0.3s ease-in-out)
+			span 
+				display block
+				height 0px
+				background transparent url(../img/img-item-menu.png) no-repeat 50% 0
+			&:hover
+				color azul
+		.activate
+			color azul
+			span
+				height 11px!important
+	input
+		border gris  solid 1px
+		color oscuro
+		padding 3px 3px 3px 25px
+		width 200px
+		background transparent url(../img/img-search.jpg) no-repeat 3px 50%
+footer
+	overflow hidden
+	.content-footer
+		.first, .second
+			height 138px
+		.first
+			width 49.6%
+			background transparent url(../img/bkg-foo-div1.jpg) repeat-x
+			a
+				background blanco
+				transition(background 0.3s ease-in-out)
+			#lnk-tt
+				width 38px
+				height 30px
+				bottom 15px
+				right 70px
+				&:hover
+					background #00ABF0
+			#lnk-fb
+				width 15px
+				height 33px
+				bottom 15px
+				right 30px
+				&:hover
+					background #3C599D
+		.second
+			width 50%
+			background #eeeeee
+			.sitemap
+				padding 15px 0 0 30px
+				a
+					font-family 'brandon_grotesque_regularRg'
+					font-size .97em
+					color azul_fuerte
+					width 212px
+					margin 0 20px 5px 0
+					transition(color 0.2s ease-in-out)
+					&:hover
+						color verde2
+						text-decoration underline
+				.active
+					color verde2
+					text-decoration underline
+	address
+		margin 20px 0
+		padding-top 20px
+		border-top #de2020 solid 1px
+		font-family 'montserratregular'
+		font-size .85em
+		font-style normal
+		color #6b6b6b
+.cycle-pager
+	left 50%
+	margin -45px 0 0 -480px
+	z-index 110
+	span 
+		display inline-block
+		height 18px
+		width 18px
+		margin 8px
+		cursor pointer
+		background-color transparent
+		background-image url(../img/cycle-pager.png)
+		background-repeat no-repeat
+		background-position 0 0
+		&:hover
+			background-position -18px 0
+	.cycle-pager-active
+		background-position -18px 0
+.lnk-back
+	font-family 'montserratregular'
+	font-size .9em
+	color #696969
+	height 24px
+	padding 7px
+	padding-left 40px
+	margin 0 0 20px 20px
+	span
+		top 0
+		left 0
+		width 29px
+		height 29px
+		border #e0e0e0 solid 1px
+		background #f5f5f5 url(../img/blue-arrow-left.png) no-repeat 50% 50%
+		border-radius 50%
+	&:hover
+		text-decoration underline
+#gralCycle.cycle-slideshow
+	width 100%
+	height 216px
+	.item-slide
+		width 100%
+		height 216px
+		a
+			width 100%
+			height 216px
+		.label
+			color blanco
+			h1, h2
+				font-weight normal
+				text-shadow 0 0 4px #a09c9c
+				margin 0
+				left 12px
+			h1
+				font-size 3em
+				top 35px
+				line-height 1em
+				font-family 'brandon_grotesqueblack'
+			h2
+				top 130px
+				font-size 1.8em
+				font-family 'brandon_grotesquelight'
+#gralBox
+	position relative
+	width 928px
+	background #f5f5f5
+	border #e0e0e0 solid 1px
+	margin 20px auto
+	padding 25px 0
+	h1, h2
+		padding 0 25px
+		margin 25px 0
+	h1
+		brandond_black(2em)
+		text-transform uppercase
+		color oscuro
+		border-bottom #de2020 solid 1px
+	h2
+		monserrat_regular(1.5em)
+		color #686868
+	p, strong
+		color #686868
+		monserrat_regular(.8em)
+		line-height 20px
+		margin 10px 25px
+	label
+		color azul
+		monserrat_regular(1em)
+		line-height 20px
+	li
+		margin 0
+		padding 0
+	.lrow, .rrow
+		width 433px
+		p
+			margin 0 0 10px 0!important
+		h2
+			margin 0 0 10px 0
+			padding 0
+	.lrow
+		float left
+		margin-left 25px
+	.rrow
+		float right
+		margin-right 25px
+	.img
+		position relative
+		img 
+			width 100%
+			height auto
+		.label
+			position absolute
+			display block
+			left 0
+			bottom 0
+			width 100%
+			background #00adbc
+			span
+				display block
+				color blanco
+				monserrat_regular(.75em)
+				padding 8px 15px
+	ul.list
+		margin-top -5px
+		padding 0 25px 0 40px
+		li
+			padding-left 15px
+			color #686868
+			monserrat_regular(.8em)
+			margin-bottom 3px
+	table.tb1
+		width 888px
+		margin 15px auto 0px auto
+		border #e0e0e0 solid 1px
+		background #eaeaea
+		thead, tfoot
+			tr
+				background #017cba
+				color blanco
+				text-transform uppercase
+				th, td
+					text-align center
+					padding 10px 25px
+					monserrat_regular(.8em)
+		tbody
+			td
+				text-align center
+				monserrat_regular(.8em)
+				color oscuro
+				padding 5px
+	table.tb2
+		width 888px
+		margin 15px auto 0px auto
+		border #e0e0e0 solid 1px
+		background #eaeaea
+		thead
+			tr
+				cursor pointer
+				background #454545
+				color blanco
+				text-transform uppercase
+				th
+					padding 10px 25px
+					monserrat_regular(1.5em)
+					&:first-child
+						width 65%
+					&:last-child
+						width 35%
+		tbody
+			display none
+			td
+				monserrat_regular(.8em)
+				color oscuro
+				padding 5px 10px
+				&:first-child
+					width 65%
+				&:last-child
+					width 35%
+	table.tb3
+		width 888px
+		margin 15px auto 0px auto
+		border #e0e0e0 solid 1px
+		background #eaeaea
+		tbody
+			td
+				text-align left
+				monserrat_regular(.8em)
+				color oscuro
+				padding 8px
+				border #e0e0e0 solid 1px
+				width 50%
+				text-transform uppercase
+	.active
+		thead
+			tr
+				background #017cba!important
+	.btn
+		border none
+		background azul
+		color blanco
+		monserrat_regular(1em)
+		padding 5px 15px
+		transition(all 0.3s ease-in-out)
+		&:hover
+			background azul_fuerte
+	.lnk_pdf
+		padding 0 0 0 30px
+		background transparent url(../img/transparencia/archive-pdf.png) no-repeat 0 50%
+		color #282828
+		transition(all 0.3s ease-in-out)
+		&:hover
+			color #47b39e
+#pagoturecibo
+	position relative
+	background azul
+	height 0
+	overflow hidden
+	p, .text
+		monserrat_regular(.9em)
+	p
+		margin 0
+		padding 5px
+	label
+		text-transform uppercase
+		display inline-block
+		color blanco
+		width 165px
+		text-align right
+	.text
+		border none
+		padding 3px
+		width 180px
+	.btn
+		border none
+		background #303030
+		color blanco
+		monserrat_regular(1em)
+		padding 5px 15px
+		letter-spacing 2px
+		transition(all 0.3s ease-in-out)
+		&:hover
+			background azul_fuerte
+	a, span
+		color blanco
+		monserrat_regular(.9em)
+		text-transform uppercase
+	a
+		text-decoration underline
+	span
+		display inline-block
+		margin-top 5px
+	h1
+		margin 10px 0!important
+		padding-left 170px
+		color blanco
+		font normal 1.5em 'brandon_grotesquebold'!important
+	.help
+		cursor pointer
+		display inline-block
+		width 24px
+		height 24px
+		background-color transparent
+		background-image url(../img/helpw.png)
+		background-repeat no-repeat
+		background-position 0 0
+		&:hover
+			background-position -24px 0
+	.wrapper, hr
+		display none
+	#close
+		position absolute
+		right 15px
+		bottom 15px
+		display block
+		color blanco
+		text-decoration none
+		monserrat_regular(.9em)
+		&:hover
+			text-decoration underline

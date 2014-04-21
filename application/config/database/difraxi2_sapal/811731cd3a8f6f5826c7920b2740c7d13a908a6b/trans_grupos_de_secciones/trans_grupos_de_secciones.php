@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"ids":["grupo"],"table":{"crudTitle":"trans_grupos_de_secciones manager","crudRowsPerPage":"20"},"filter":{"list":["id","grupo"],"actived":["grupo"],"atrr":{"grupo":{"alias":"Nombre de grupo"},"id":{"alias":"id"}}},"column":{"list":["id","grupo"],"actived":["id","grupo"],"atrr":{"grupo":{"alias":"Nombre de grupo"},"id":{"alias":"id"}}},"frm_type":"2"}

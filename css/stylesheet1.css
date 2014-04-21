@@ -1,0 +1,321 @@
+/*  CSS3 ✰ Classes  */
+#inicio .cycle-slideshow{width:100%;height:423px;}
+#inicio .cycle-slideshow .item-slide{width:100%;height:423px;}
+#inicio .cycle-slideshow .item-slide a{width:100%;height:423px}
+#inicio .cycle-slideshow .item-slide .label{color:#fff;}
+#inicio .cycle-slideshow .item-slide .label h1,#inicio .cycle-slideshow .item-slide .label h2{font-weight:normal;margin:0;left:10px}
+#inicio .cycle-slideshow .item-slide .label h1{text-shadow:0 0 4px #a09c9c;font-family:'brandon_grotesqueblack';font-size:4em;line-height:60px;top:120px;text-transform:uppercase}
+#inicio .cycle-slideshow .item-slide .label h2{font-family:'brandon_grotesquelight';top:240px;font-size:2em;line-height:36px}
+#inicio #enlaces{margin:15px 0;}
+#inicio #enlaces li{margin:9px}
+#inicio #enlaces a{width:295px;height:146px;border:#c1c0c0 solid 1px;background:#fff;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#inicio #enlaces a span.img{width:90px;height:89px;margin-top:10px;background-color:transparent;background-repeat:no-repeat;background-position:-90px 50%}
+#inicio #enlaces a span.pa{width:100%;bottom:15px;font-family:'brandon_grotesquebold';color:#c1c0c0;font-size:1em;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+#inicio #enlaces a:hover{background:#2cb2ba;border:#2cb2ba solid 1px;}
+#inicio #enlaces a:hover span.img{background-position:0 50%}
+#inicio #enlaces a:hover span.pa{color:#fff}
+#inicio #enlaces #lnk-proyectos span.img{background-image:url("../img/inicio/ico-prioritarios.png")}
+#inicio #enlaces #lnk-pago span.img{background-image:url("../img/inicio/ico-enlinea.png")}
+#inicio #enlaces #lnk-cultura span.img{background-image:url("../img/inicio/ico-cultura.png")}
+#inicio #mas{width:31px;height:31px;background:#f9f9f9 url("../img/blue-arrow-down.png") no-repeat 50% 50%;margin-bottom:15px;-o-border-radius:50%;-ms-border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%}
+#inicio .top-inicio h1{font-size:2.5em;font-family:'brandon_grotesqueblack';color:#303030;border-bottom:#de2020 solid 1px;padding-left:25px;margin-bottom:15px;background:transparent url("../img/black-arrow-right.png") no-repeat 10px 50%}
+#inicio .noticias a{overflow:hidden}
+#inicio .noticias .top-news{width:621px;height:372px;margin-left:10px;border:#c1c0c0 solid 1px;}
+#inicio .noticias .top-news span.txt{width:601px}
+#inicio .noticias .top-news span.more{bottom:10px;right:10px;color:#fff;font-family:'montserratregular';font-size:1em;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#inicio .noticias .top-news span.more:hover{text-decoration:underline}
+#inicio .noticias .ul_news{margin-right:10px;}
+#inicio .noticias .ul_news li{border:#c1c0c0 solid 1px;list-style-type:none;}
+#inicio .noticias .ul_news li:first-child{margin-bottom:20px}
+#inicio .noticias .ul_news li a{width:301px;height:176px;}
+#inicio .noticias .ul_news li a span.txt{width:281px}
+#inicio .noticias .ul_news li a span.date{color:#fff;font-family:'montserratregular';font-size:.9em;top:7px;right:10px}
+#inicio .noticias span.img{width:100%;height:100%;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+#inicio .noticias span.txt{display:none;padding:10px;font-size:1em;bottom:0;color:#fff;font-family:'montserratregular';background:transparent url("../img/fade-blue.png") repeat}
+#inicio .servicios{margin:10px 0;}
+#inicio .servicios li{margin-left:20px;}
+#inicio .servicios li:first-child{margin-left:0}
+#inicio .servicios a{width:301px;height:193px;overflow:hidden;}
+#inicio .servicios a span.pa{width:271px;padding:10px;bottom:-45px;font-family:'montserratregular';color:#007cbb;font-size:1.2em;background:transparent url("../img/fade-white.png") repeat;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+#inicio .servicios a:hover span.pa{width:281px;bottom:0}
+#inicio .redes{margin:10px 0 30px 0;}
+#inicio .redes li{margin-left:20px;}
+#inicio .redes li:first-child{margin-left:0}
+#inicio .redes li img{width:301px;height:350px}
+#inicio .lnk-climapp{width:123px;height:43px;top:29px}
+#inicio #lnk-climapp-gplay{right:32px}
+#inicio #lnk-climapp-astore{right:182px}
+#servicios #ul_servicios{margin:30px 0 20px 0;}
+#servicios #ul_servicios a{width:300px;height:229px;margin:10px;color:#fff;}
+#servicios #ul_servicios a span.fade,#servicios #ul_servicios a span.ico{width:100%;height:100%;top:0;left:0;z-index:1}
+#servicios #ul_servicios a span.screen{width:100%;height:100%;bottom:0;left:0;z-index:2}
+#servicios #ul_servicios a span.ico{background-color:transparent;background-repeat:no-repeat;background-position:50% 58px;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;z-index:3}
+#servicios #ul_servicios a span.txt{font-family:'brandon_grotesquebold';font-size:1em;width:280px;bottom:0;padding:10px;z-index:4}
+#servicios #ul_servicios #lnk-agua span.fade{background:transparent url("../img/servicios/fade1.png") repeat}
+#servicios #ul_servicios #lnk-agua span.ico{background-image:url("../img/servicios/ico-agua.png")}
+#servicios #ul_servicios #lnk-agua span.screen{background:#20cbd4}
+#servicios #ul_servicios #lnk-saneamiento span.fade{background:transparent url("../img/servicios/fade2.png") repeat}
+#servicios #ul_servicios #lnk-saneamiento span.ico{background-image:url("../img/servicios/ico-saneamiento.png")}
+#servicios #ul_servicios #lnk-saneamiento span.screen{background:#00adbc}
+#servicios #ul_servicios #lnk-alcantarillado span.fade{background:transparent url("../img/servicios/fade3.png") repeat}
+#servicios #ul_servicios #lnk-alcantarillado span.ico{background-image:url("../img/servicios/ico-alcantarillado.png")}
+#servicios #ul_servicios #lnk-alcantarillado span.screen{background:#62b1bd}
+#servicios #ul_servicios #lnk-sucursales span.fade{background:transparent url("../img/servicios/fade4.png") repeat}
+#servicios #ul_servicios #lnk-sucursales span.ico{background-image:url("../img/servicios/ico-sucursales.png")}
+#servicios #ul_servicios #lnk-sucursales span.screen{background:#00b289}
+#servicios #ul_servicios #lnk-requisitos span.fade{background:transparent url("../img/servicios/fade5.png") repeat}
+#servicios #ul_servicios #lnk-requisitos span.ico{background-image:url("../img/servicios/ico-requisitos.png")}
+#servicios #ul_servicios #lnk-requisitos span.screen{background:#6ccdb3}
+#servicios #ul_servicios #lnk-cuotas span.fade{background:transparent url("../img/servicios/fade6.png") repeat}
+#servicios #ul_servicios #lnk-cuotas span.ico{background-image:url("../img/servicios/ico-cuotas.png")}
+#servicios #ul_servicios #lnk-cuotas span.screen{background:#007a61}
+#servicios #ul_servicios #lnk-reglamentos span.fade{background:transparent url("../img/servicios/fade7.png") repeat}
+#servicios #ul_servicios #lnk-reglamentos span.ico{background-image:url("../img/servicios/ico-reglamentos.png")}
+#servicios #ul_servicios #lnk-reglamentos span.screen{background:#009579}
+#servicios #ul_servicios #lnk-suspension span.fade{background:transparent url("../img/servicios/fade8.png") repeat}
+#servicios #ul_servicios #lnk-suspension span.ico{background-image:url("../img/servicios/ico-suspension.png")}
+#servicios #ul_servicios #lnk-suspension span.screen{background:#30d9c4}
+#servicios #ul_servicios #lnk-compra span.fade{background:transparent url("../img/servicios/fade9.png") repeat}
+#servicios #ul_servicios #lnk-compra span.ico{background-image:url("../img/servicios/ico-compras.png")}
+#servicios #ul_servicios #lnk-compra span.screen{background:#88e2d2}
+#servicios .view-serv{background:#f5f5f5;border:#e0e0e0 solid 1px;width:930px;margin:30px auto;}
+#servicios .view-serv h1{font-size:2.2em;font-family:'brandon_grotesqueblack';color:#303030;border-bottom:#de2020 solid 1px;margin:10px 0 20px 0;line-height:2.5em}
+#servicios .view-serv h2{color:#696969;font-family:'montserratregular';margin:0}
+#servicios .view-serv .ul_hoz li{width:439px;vertical-align:top;}
+#servicios .view-serv .ul_hoz li img{width:439px;height:auto}
+#servicios .view-serv .ul_hoz li p{margin:10px 20px 20px 20px !important;line-height:30px}
+#servicios .view-serv .ul_hoz li .pie{background:#00abbf;color:#fff;padding:10px;font-family:'montserratregular';font-size:1em;margin-top:-5px}
+#servicios .view-serv p{color:#696969;font-size:.8em;font-family:'montserratregular';margin:20px;line-height:26px}
+#servicios #ul_mini_listado{padding-top:20px;}
+#servicios #ul_mini_listado li{width:87px;height:72px;border:#c2c2c2 solid 1px;margin:0 8px;padding-top:14px;text-align:center;cursor:pointer;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+#servicios #ul_mini_listado li:hover{height:106px !important;}
+#servicios #ul_mini_listado li:hover .min-serv{background-position:0 50%}
+#servicios #ul_mini_listado .activate{height:106px !important;}
+#servicios #ul_mini_listado .activate .min-serv{background-position:0 50%}
+#servicios #ul_mini_listado .min-serv{display:inline-block;zoom:1;*display:inline;width:55px;height:56px;background-color:transparent;background-repeat:no-repeat;background-position:-55px 50%;-moz-background-size:cover;-webkit-background-size:cover;background-size:cover}
+#servicios #ul_mini_listado .min-agua{background-image:url("../img/servicios/ico-mini-agua.png")}
+#servicios #ul_mini_listado .min-saneamiento{background-image:url("../img/servicios/ico-mini-saneamiento.png")}
+#servicios #ul_mini_listado .min-alcantarillado{background-image:url("../img/servicios/ico-mini-alcantarillado.png")}
+#servicios #ul_mini_listado .min-sucursales{background-image:url("../img/servicios/ico-mini-sucursales.png")}
+#servicios #ul_mini_listado .min-requisitos{background-image:url("../img/servicios/ico-mini-requisitos.png")}
+#servicios #ul_mini_listado .min-cuotas{background-image:url("../img/servicios/ico-mini-cuotas.png")}
+#servicios #ul_mini_listado .min-reglamentos{background-image:url("../img/servicios/ico-mini-reglamentos.png")}
+#servicios #ul_mini_listado .min-suspension{background-image:url("../img/servicios/ico-mini-suspension.png")}
+#servicios #ul_mini_listado .min-compra{background-image:url("../img/servicios/ico-mini-compras.png")}
+#servicios #ul_mini_listado .li-aguapotable:hover{background:#20cbd4;border:#20cbd4 solid 1px}
+#servicios #ul_mini_listado .li-aguapotable.activate{background:#20cbd4;border:#20cbd4 solid 1px}
+#servicios #ul_mini_listado .li-saneamiento:hover{background:#00adbd;border:#00adbd solid 1px}
+#servicios #ul_mini_listado .li-saneamiento.activate{background:#00adbd;border:#00adbd solid 1px}
+#servicios #ul_mini_listado .li-alcantarillado:hover{background:#62b1bd;border:#62b1bd solid 1px}
+#servicios #ul_mini_listado .li-alcantarillado.activate{background:#62b1bd;border:#62b1bd solid 1px}
+#servicios #ul_mini_listado .li-sucursales:hover{background:#00b289;border:#00b289 solid 1px}
+#servicios #ul_mini_listado .li-sucursales.activate{background:#00b289;border:#00b289 solid 1px}
+#servicios #ul_mini_listado .li-requisitos:hover{background:#6ccdb3;border:#6ccdb3 solid 1px}
+#servicios #ul_mini_listado .li-requisitos.activate{background:#6ccdb3;border:#6ccdb3 solid 1px}
+#servicios #ul_mini_listado .li-cuotas:hover{background:#007a61;border:#007a61 solid 1px}
+#servicios #ul_mini_listado .li-cuotas.activate{background:#007a61;border:#007a61 solid 1px}
+#servicios #ul_mini_listado .li-reglamentos:hover{background:#009579;border:#009579 solid 1px}
+#servicios #ul_mini_listado .li-reglamentos.activate{background:#009579;border:#009579 solid 1px}
+#servicios #ul_mini_listado .li-suspension:hover{background:#30d9c4;border:#30d9c4 solid 1px}
+#servicios #ul_mini_listado .li-suspension.activate{background:#30d9c4;border:#30d9c4 solid 1px}
+#servicios #ul_mini_listado .li-compras:hover{background:#88e2d2;border:#88e2d2 solid 1px}
+#servicios #ul_mini_listado .li-compras.activate{background:#88e2d2;border:#88e2d2 solid 1px}
+#servicios .mini-title{width:929px;margin:0 auto 0 auto;}
+#servicios .mini-title h1{margin:0;color:#fff;font-size:3em;font-family:'brandon_grotesquebold';font-weight:normal;padding:45px 0 45px 112px}
+#servicios .mini-title h1.ico-saneamiento{background:transparent url("../img/servicios/ico-saneamiento.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-aguapotable{background:transparent url("../img/servicios/ico-agua.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-alcantarillado{background:transparent url("../img/servicios/ico-alcantarillado.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-sucursales{background:transparent url("../img/servicios/ico-sucursales.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-requisitos{background:transparent url("../img/servicios/ico-requisitos.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-cuotas{background:transparent url("../img/servicios/ico-cuotas.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-reglamentos{background:transparent url("../img/servicios/ico-reglamentos.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-suspension{background:transparent url("../img/servicios/ico-suspension.png") no-repeat 0 50%}
+#servicios .mini-title h1.ico-compras{background:transparent url("../img/servicios/ico-compras.png") no-repeat 0 50%}
+#servicios .mini-title-saneamiento{background:#00adbd}
+#servicios .mini-title-aguapotable{background:#20cbd4}
+#servicios .mini-title-alcantarillado{background:#62b1bd}
+#servicios .mini-title-sucursales{background:#00b289}
+#servicios .mini-title-requisitos{background:#6ccdb3}
+#servicios .mini-title-cuotas{background:#007a61}
+#servicios .mini-title-reglamentos{background:#009579}
+#servicios .mini-title-suspension{background:#30d9c4}
+#servicios .mini-title-compras{background:#88e2d2}
+.alcantarillado ul.list{padding:0 !important}
+#pp #nav{position:relative;width:928px;margin:25px auto 0 auto;background:#2cb2ba;border:#e0e0e0 solid 1px;overflow:hidden;}
+#pp #nav h1{color:#fff;text-transform:uppercase;font:normal 3em 'brandon_grotesquebold';padding:46px 100px;margin:0 !important}
+#pp #nav .lc,#pp #nav .rc{position:absolute;top:0;height:100%;width:170px;background:#f5f5f5;-o-border-radius:50%;-ms-border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;}
+#pp #nav .lc span,#pp #nav .rc span{position:absolute;top:50%;margin-top:-24px;display:inline-block;zoom:1;*display:inline;color:#303030;font:normal .7em 'montserratregular';background-color:transparent;background-repeat:no-repeat}
+#pp #nav .lc{left:-85px;}
+#pp #nav .lc span{right:14px;padding:16px 0 16px 23px;background-position:0 50%;background-image:url("../img/pp-larrows.png")}
+#pp #nav .rc{right:-85px;}
+#pp #nav .rc span{left:7px;padding:16px 23px 16px 0;background-position:49px 50%;background-image:url("../img/pp-rarrows.png")}
+#pp #ul-listado-pp li{list-style-type:none;margin:15px 0;}
+#pp #ul-listado-pp li a{background:#2cb2ba;padding:25px 0;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#pp #ul-listado-pp li a span{color:#fff;font:normal 2em 'brandon_grotesquebold'}
+#pp #ul-listado-pp li a:hover{background:#30d9c4}
+#quees #gralBox h1{margin-top:0 !important;padding-bottom:25px}
+#quees .lrow{width:584px !important}
+#quees .rrow{width:282px !important}
+#consejodirectivo #gralBox h2{margin:0 !important}
+#consejodirectivo #gralBox p{margin:0 25px 20px 25px !important}
+#hmv #gralBox h1{margin-top:0 !important;padding-bottom:25px}
+#licitaciones #gralBox h1{margin-top:0 !important;padding-bottom:25px}
+#licitaciones #gralBox ul{width:100%;text-align:center;padding:10px 0;}
+#licitaciones #gralBox ul:nth-child(odd){background:#eaeaea;border:#e0e0e0 solid 1px}
+#licitaciones #gralBox .r1{width:68px;color:#434343;font:normal 1.2em 'montserratregular'}
+#licitaciones #gralBox .r2{width:570px;color:#434343;font:normal 1.1em 'montserratregular'}
+#licitaciones #gralBox .r3{width:298px;color:#686868;font:normal 1em 'montserratregular'}
+#licitaciones #gralBox .thead{margin-bottom:25px;font:normal 1.3em 'montserratregular';background:#7b7b7b;}
+#licitaciones #gralBox .thead .r1,#licitaciones #gralBox .thead .r2,#licitaciones #gralBox .thead .r3{color:#fff !important}
+#organigrama #gralBox h1{margin-top:0 !important;padding-bottom:25px}
+#descargas #gralBox h1{margin-top:0 !important;padding-bottom:25px}
+#descargas #gralBox .pr{width:908px;margin:25px auto;border-bottom:#e0e0e0 solid 1px;padding-bottom:25px;}
+#descargas #gralBox .pr:last-child{padding-bottom:0 !important;border:none !important}
+#descargas #gralBox .rrow{width:569px !important;}
+#descargas #gralBox .rrow h2:hover{text-decoration:underline}
+#descargas #gralBox .lrow{width:267px !important}
+#descargas #gralBox .controls{position:absolute;right:15px;bottom:15px;}
+#descargas #gralBox .controls a{width:18px;height:17px;margin-right:5px;background-color:transparent;background-repeat:no-repeat;background-image:url("../img/img-controls.jpg")}
+#descargas #gralBox .controls .a_pdf{background-position:0 0}
+#descargas #gralBox .controls .a_print{background-position:-18px 0}
+#descargas #gralBox .controls .a_mail{background-position:-36px 0}
+#descargas #gralBox .a_download a{display:block;background-image:url("../img/ico-download.png");background-position:0 0}
+.sucursales h1,.sucursales h3,.sucursales h4,.sucursales span,.sucursales strong{color:#686868 !important}
+.sucursales h1{font:normal 1.5em 'montserratregular' !important;text-transform:none !important;margin:15px 0 !important;padding:0 25px 5px 25px !important}
+.sucursales h3{margin:0 0 0 15px !important;font-family:'montserratbold' !important;font-weight:normal}
+.sucursales label{font:normal .7em 'montserratregular' !important;color:#a4a4a4}
+.sucursales span,.sucursales strong{font-family:'montserratregular' !important;font-size:.9em;margin-left:15px}
+.sucursales ul{margin:0;padding:0;}
+.sucursales ul li{list-style-type:none;padding-left:5px !important;margin-bottom:10px;background:transparent url("../img/bull.png") 10px 5px no-repeat;-moz-background-size:4px 4px;-webkit-background-size:4px 4px;background-size:4px 4px}
+.sucursales .el li{margin-bottom:15px !important}
+.sucursales .sl li{margin-bottom:5px !important}
+.sucursales .l,.sucursales .r{width:439px}
+.suspension h1{margin-top:0 !important;padding-bottom:25px}
+.suspension table{width:100%;}
+.suspension table th{background:#7b7b7b;color:#fff;font:normal 1.5em 'montserratregular';padding:20px 10px}
+.suspension table td{padding:10px;vertical-align:top;font:normal .9em 'montserratregular';color:#686868}
+.suspension table span{display:block}
+.suspension table .bl{border-left:#7b7b7b solid 1px}
+.suspension table .br{border-right:#7b7b7b solid 1px}
+.sapalcompra h1{margin-top:0 !important;padding-bottom:25px}
+.sapalcompra .td_tal{text-align:left !important}
+.sapalcompra .td_taj{text-align:justify !important}
+.sapalcompra .td_tar{text-align:right !important}
+.sapalcompra td{width:50%;padding:10px !important;line-height:21px !important;vertical-align:top !important}
+.sapalcompra .txt{width:286px;margin-bottom:10px;border:#282828 solid 1px}
+.sapalcompra textarea{height:75px;resize:none}
+.sapalcompra .btn_enviar{color:#fff;background:#017cba;border:none;font:normal .9em 'montserratregular';padding:7px 35px}
+.sapalcompra .aviso-pdf{font:normal .83em 'montserratregular';background:#ec5252;padding:15px 17px;color:#fff;margin-top:20px;}
+.sapalcompra .aviso-pdf .tac{padding:15px;border:1px solid #fff;text-transform:uppercase;}
+.sapalcompra .aviso-pdf .tac p{color:#fff !important}
+.sapalcompra .aviso-pdf .tac h3{text-transform:uppercase;margin:0 0 8px 0}
+.sapalcompra .aviso-pdf .tac a{color:#aa2e2e;-o-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.sapalcompra .alert-blue{background:#27b4fb;color:#fff;padding:15px 17px;margin:20px 0 20px 0;}
+.sapalcompra .alert-blue .tac{padding:15px;border:#fff solid 1px;text-transform:uppercase;font:normal .9em 'montserratregular'}
+.sapalcompra .ul_hoz li{vertical-align:middle}
+.sapalcompra .alert-gray{margin:20px 0 20px 0;font:normal .9em 'montserratregular';background:transparent url("../img/bkg-gray.png") repeat-x 0 50%;}
+.sapalcompra .alert-gray a{margin-left:10px;color:#fff}
+#noticias h1{margin-top:0 !important;padding-bottom:25px}
+#noticias h3{color:#fff;width:352px;padding:7px 0 7px 10px;font:normal 1.3em 'montserratregular'}
+#noticias h4{font:normal 1.2em 'montserratregular';color:#686868;margin-bottom:5px}
+#noticias p,#noticias strong{font-size:.85em !important}
+#noticias .h31{background:#49b29e;margin-top:0 !important}
+#noticias .h32{background:#49c6a9}
+#noticias .h33{background:#95d9c7}
+#noticias .h34{background:#6be1d3}
+#noticias .lrow{width:362px !important;padding-right:15px;margin-left:0 !important;border-right:#e0e0e0 solid 1px;}
+#noticias .lrow p{width:340px;cursor:pointer;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#noticias .lrow p:hover{color:#4984ad}
+#noticias .ml10{margin-left:10px !important;}
+#noticias .ml10 a{color:#017cba;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#noticias .ml10 a:hover{color:#0e3b71}
+#noticias .rrow{width:514px !important;}
+#noticias .rrow .ul_hoz li{margin-right:5px}
+#noticias .controls{margin:0 25px 10px 0;}
+#noticias .controls a{width:18px;height:17px;margin-right:5px;background-color:transparent;background-repeat:no-repeat;background-image:url("../img/img-controls.jpg")}
+#noticias .controls .a_pdf{background-position:0 0}
+#noticias .controls .a_print{background-position:-18px 0}
+#noticias .controls .a_mail{background-position:-36px 0}
+#noticias a.dib.l,#noticias a.dib.r{font:normal .9em 'montserratregular';color:#017cba;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#noticias a.dib.l:hover,#noticias a.dib.r:hover{color:#0e3b71}
+#sac h1{margin-top:0 !important;padding-bottom:25px}
+#sac .alert-blue{background:#27b4fb;color:#fff;padding:15px 17px;margin:30px 0 20px 0;}
+#sac .alert-blue .tac{padding:15px;border:#fff solid 1px;text-transform:uppercase;font:normal .9em 'montserratregular'}
+#sac .title-blue{width:928px !important;background:#017cba;color:#fff;font:normal 2.5em 'brandon_grotesquebold';padding:10px 0;margin-top:15px}
+#sac .title-blue.small{font-size:1.5em !important;padding:5px 0 !important}
+#sac p strong{color:#282828 !important;text-transform:uppercase;font-size:.8em}
+#sac .ul_hoz li{width:150px;vertical-align:middle;border:#e0e0e0 solid 1px;}
+#sac .ul_hoz li a{color:#fff;font:normal .75em 'brandon_grotesquebold'}
+#sac .ul_hoz .li1{background:#00b6c3;height:46px;padding-top:10px}
+#sac .ul_hoz .li2{background:#16c809;height:46px;padding-top:10px}
+#sac .ul_hoz .li3{background:#9a87e7;height:46px;padding-top:10px}
+#sac .ul_hoz .li4{background:#efbf0f;height:56px}
+#sac .ul_hoz .li5{background:#ec5fdf;height:41px;padding-top:15px}
+#sac .ul_hoz .li6{background:#ff6565;height:41px;padding-top:15px}
+#sac .wrapper{width:928px !important;padding-top:0 !important;}
+#sac .wrapper .tabs a{width:45% !important}
+#sac .wrapper .cont_sesion{background:#eaeaea;width:867px;margin:0 auto;border:#e0e0e0 solid 1px}
+#sac #opction-menu li{height:68px}
+#sac .option-sac li{width:215px;text-align:center;vertical-align:bottom;}
+#sac .option-sac li a,#sac .option-sac li span{margin:10px 0}
+#sac .option-sac li a:hover{text-decoration:underline}
+#sac .option-sac li span{color:#fff;font:normal .8em 'brandon_grotesquebold'}
+#sac #lisac1{background:#00b6c3}
+#sac #lisac2{background:#17c70a}
+#sac #lisac3{background:#9b87e8}
+#sac #lisac4{background:#eebf0f}
+#sac #lisacs1{background:#02959f}
+#sac #lisacs2{background:#0e9a03}
+#sac #lisacs3{background:#7063ab}
+#sac #lisacs4{background:#caa317}
+#sac .pt15{padding-top:15px}
+#sac .oheader_gral{font:normal .9em 'montserratregular';padding:15px;color:#fff;background:#017cba;margin:0 20px}
+#sac .inner{padding:25px;background:#eaeaea;margin:0 20px}
+#sac .option-login{width:892px;margin:10px auto;border:#e0e0e0 solid 1px;}
+#sac .option-login .oheader{font:normal .9em 'montserratregular';padding:15px;color:#fff;background:#017cba;cursor:pointer;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#sac .option-login .oheader:hover{background:#51849f}
+#sac .option-login .form{padding:25px;display:none;background:#eaeaea;}
+#sac .option-login .form p{margin:0 !important}
+#sac .option-login .form label,#sac .option-login .form span,#sac .option-login .form input{color:#282828 !important}
+#sac .option-login .form select{text-transform:uppercase}
+#sac .option-login .form .txt{padding:3px;border:#282828 solid 1px;width:286px}
+#sac .option-login .form .txt-error{border:Red solid 1px !important}
+#sac .option-login .form .btn{border:none;background:#017cba;color:#fff !important;font:normal 1em 'montserratregular';padding:5px 10px;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+#sac .option-login .form .btn:hover{background:#0e3b71}
+#sac .option-login .activate{display:block}
+#sac #option-login label{display:inline-block;zoom:1;*display:inline;width:110px;text-align:right;margin:5px}
+#sac #option-login input[type="text"],#sac #option-login input[type="password"]{margin:0 10px 0 5px}
+#sac #option-nusario label{display:inline-block;zoom:1;*display:inline;width:300px;margin:5px}
+#sac #msjlogin{padding:10px 0 0 128px}
+#sac #msj_registrarse{font:normal 1em 'montserratregular';text-transform:uppercase}
+.sac_dashboard{padding-top:20px;}
+.sac_dashboard h1{font:normal 2.5em 'brandon_grotesquebold';margin-bottom:0 !important;color:#fff}
+.sac_dashboard h1#gral{background:#00b6c3;padding:10px 0 !important}
+.sac_dashboard h2{padding:0 !important;margin:20px 0 !important}
+.sac_dashboard .lnk_descarga,.sac_dashboard label,.sac_dashboard hr{color:#007cb8}
+.sac_dashboard hr{background:#007cb8;height:2px;border:0}
+.sac_dashboard .lnk_descarga{font:normal 1.5em 'montserratregular';}
+.sac_dashboard .lnk_descarga:hover{text-decoration:underline}
+.sac_dashboard .l{margin-left:15px;line-height:18px}
+.sac_dashboard .r{margin-right:15px;line-height:18px}
+.sac_dashboard .txt{border:#c1c0c0 solid 1px;padding:3px}
+.sac_dashboard .btn{background:#017cba;color:#fff;border:none;margin-left:10px;padding:4px 10px;-o-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+.sac_dashboard .btn:hover{background:#0e3b71}
+.sac_dashboard ul#ul_msj li{display:inline-block;zoom:1;*display:inline;vertical-align:middle;padding:3px}
+.sac_dashboard .recuperar label{width:135px}
+.sac_dashboard .recuperar input[type="text"]{width:194px !important}
+.sac_dashboard #paso2{display:none}
+.sac_dashboard .reportes{background-color:#eebf0f !important}
+#cultura .mini-title{width:960px;margin:25px auto 7px auto;}
+#cultura .mini-title h1{margin:0;color:#fff;font-size:3em;font-family:'brandon_grotesquebold';font-weight:normal;padding:45px 0 45px 112px;background:#8d67cc url("../img/cultura/ico-cultura.png") no-repeat 190px 50%}
+#cultura .wrapper ul{text-align:center;border:#b1b1b1 solid 1px}
+#cultura .wrapper li{width:440px;vertical-align:middle;padding-left:15px;padding-right:15px;}
+#cultura .wrapper li p,#cultura .wrapper li h3{color:#fff;text-align:left !important}
+#cultura .wrapper li p{font-family:montserratregular !important;font-size:1em}
+#cultura .wrapper li h3{font:normal 1.2em 'montserratregular'}
+#cultura #naranja{background:#ffa509;margin-bottom:7px;padding-top:10px;padding-bottom:15px}
+#cultura #verde{background:#638b18;margin-bottom:7px;padding-top:30px;padding-bottom:30px;}
+#cultura #verde li:first-child{width:400px !important}
+#cultura #verde li:last-child{width:480px !important}
+#cultura #rosa{background:#eb1c74;margin-bottom:7px;padding-top:10px;padding-bottom:10px}
+#cultura #azul{background:#00add8;margin-bottom:7px;padding-top:15px;padding-bottom:15px}

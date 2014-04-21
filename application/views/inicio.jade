@@ -1,0 +1,71 @@
+#inicio.pr
+	.cycle-slideshow(data-cycle-fx="scrollHorz", data-cycle-slides="> div", data-cycle-timeout="4000", data-cycle-speed="1000", data-cycle-swipe="true", data-cycle-pager=".cycle-pager", data-cycle-pager-template="<span></span>")
+		.item-slide.bkg-cover(style="background-image: url({DIR}media/images/bann-img1.jpg);")
+			.label.wrapper.pr
+				h1.pa CON AGUA
+				h2.pa HACIA EL FUTURO	
+		.item-slide.bkg-cover(style="background-image: url({DIR}media/images/bann-img2.jpg);")
+			.label.wrapper.pr
+				h1.pa CON AGUA
+				h2.pa HACIA EL FUTURO	
+	.cycle-pager.pa.tac.wrapper	
+	.wrapper
+		ul#enlaces.ul_hoz.tac
+			li
+				a(href="").db.pr#lnk-proyectos.tac
+					span.img.dib
+					span.pa.db.tac PROYECTOS PRIORITARIOS
+			li
+				a(href="").db.pr#lnk-pago.tac
+					span.img.dib
+					span.pa.db.tac PAGO EN LÍNEA
+			li
+				a(href="").db.pr#lnk-cultura.tac
+					span.img.dib
+					span.pa.db.tac CULTURA DEL AGUA
+		.tac
+			#mas.dib
+		.tac
+			img(src="{DIR}img/img-073.jpg", alt="073")
+		.noticias.top-inicio
+			h1 NOTICIAS
+			.l
+				a(href="{DIR}").db.pr.top-news
+					span.db.img.bkg-cover(style="background-image: url({DIR}media/images/not-img1.jpg)")
+					span.pa.db.txt Incrementa Sapal su presupuesto para obras
+					span.pa.db.more Leer más >
+			.r
+				ul.ul_news
+					li
+						a(href="").db.pr
+							span.db.img.bkg-cover(style="background-image: url({DIR}media/images/not-img2.jpg)")
+							span.pa.db.date 21/08/13
+							span.pa.db.txt Cumplir con la reglamentación ambiental pide sapal a curtidurías
+					li
+						a(href="").db.pr
+							span.db.img.bkg-cover(style="background-image: url({DIR}media/images/not-img3.jpg)")
+							span.pa.db.date 20/08/13
+							span.pa.db.txt Atiende gobierno Municipal Peticiones de ADICUR
+			.clear				
+		.servicios.top-inicio
+			h1 AL SERVICIO
+			ul.ul_hoz.tac
+				li
+					a(href="", style="background-image: url({DIR}media/images/img-ciudadano.jpg)").db.pr.bkg-cover#lnk-ciudadano
+						span.pa.db.tal Ciudadano
+				li
+					a(href="", style="background-image: url({DIR}media/images/img-empresa.jpg)").db.pr.bkg-cover#lnk-empresa
+						span.pa.db.tal Empresa
+				li
+					a(href="", style="background-image: url({DIR}media/images/img-funcionario.jpg)").db.pr.bkg-cover#lnk-funcionario
+						span.pa.db.tal Funcionario
+		.redes.top-inicio
+			h1 REDES SOCIALES
+			ul.ul_hoz
+				li
+					img(src="{DIR}img/demo-tt.jpg", alt="twitter plugin sapal")
+				li
+					img(src="{DIR}img/demo-fb.jpg", alt="facebook plugin sapal")
+				li
+					a(href="").db
+						img(src="{DIR}img/img-sac.jpg", alt="Sistema de Atención al Cliente")

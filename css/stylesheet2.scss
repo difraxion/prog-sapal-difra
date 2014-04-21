@@ -1,0 +1,957 @@
+@import "mixins.scss";
+
+$negro: black;
+$oscuro: #303030;
+$blanco: white;
+$azul: #017cba;
+
+//title trnas
+$azul_fuerte: #0e3b71;
+$azul_tras: #27b4fb;
+$azul_map:#70acc1;
+$verde: #00b093;
+$verdemap:#617b22;
+$verde2: #00bb39;
+$verdetrasntitle: #009579;
+$verdetrasntitlehover: #47b39e;
+$verde_menu_trans1: #00bb98;
+$verde_menu_trans2: #01dcb3;
+$verde_menu_cont: #4ab6a2;
+$gris1: whitesmoke;
+$gris3: #686868;
+$gris4: #E0E0E0;
+$gris: #b1b1b1;
+$gris2: #c1c0c0;
+$gris5: #282828;
+$gris6: #e1e1e1;
+$gris7: #aaaaaa;
+$grismapa: #7b7b7a;
+$rojoaviso: #ec5252;
+$bold: brandon_grotesquebold;
+$bold_italic: brandon_grotesquebold_italic;
+$black: brandon_grotesqueblack;
+$black_italic: brandon_grotesqueblack_italic;
+$light: brandon_grotesquelight;
+$light_italic: brandon_grotesquelight_italic;
+$medium: brandon_grotesquemedium;
+$medium_italic: brandon_grotesqueMdIt;
+$regular: brandon_grotesque_regularRg;
+$regular_italic: brandon_grotesqueRgIt;
+$thin: brandon_grotesquethin;
+$thin_italic: brandon_grotesquethin_italic;
+$montserratbold: montserratbold;
+$montserratregular: montserratregular;
+
+@mixin fuente($size, $font) {
+    font: normal $size $font;
+}
+
+@import "stylesheet3.css";
+@import "jquery-ui-1.10.4.custom.css";
+@import "iealert/style.css";
+
+.detached {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+  }
+  
+section[data="historico"]{
+	width: 1024px;
+	margin: 15px auto 0 auto;
+	border: $gris4 solid 1px;
+	#filters{
+		display: inline-block;
+		list-style: none;
+		width: 100%;
+		padding: 15px;
+			li{
+				width: 24%;
+				float: left;
+				margin: 5px;
+
+			}
+		}
+}
+.historico{
+	width: 100%!important;
+	div{
+    	text-align: center!important;
+    	position: relative;
+	     }
+}
+.directorio{
+	text-transform: none!important;
+	text-align: left!important;
+	table{
+		width: 100%;
+		thead{
+			text-transform: uppercase!important;
+			text-align: center!important;
+		}
+	}
+}
+.map{
+    width: 100%;
+    height: 800px;
+    
+}
+.minuscula{
+	text-transform: lowercase;
+}
+.marker{
+    background: url(../img/inicio/ico-marker.png) top left no-repeat;
+    width: 100px;
+    height: 182px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+  //  cursor: pointer;
+    span{
+        background:$grismapa;
+        position: absolute;
+        color: $blanco;
+        font-size: .9em;
+        top: 50px;
+        left: 21px;
+        width: 128px;
+        padding:3px;
+        &:nth-child(2)
+        {
+        	top:68px;
+            left: 112px;
+            width: 37px;
+            font-size: .9em;
+		}
+		&:last-child{
+			font-size: .9em;
+			background:$grismapa;
+			width: 85px;
+			padding:3px;
+			top:68px;
+
+		}
+    }
+}
+.maphover span{
+    background:$rojoaviso;
+}
+.title-trans {
+    // height: 50px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blanco;
+    h1 {
+        @include fuente(1.5em, $black);
+        margin: 0;
+        padding: 8px 0;
+    }
+    span {
+        @include fuente(0.7em, $montserratregular);
+        a {
+            color: $azul_tras;
+            text-decoration: underline;
+            @include transition(all, 0.5s, ease-in-out);
+            cursor: pointer;
+        }
+        a:hover {
+            color: $blanco;
+        }
+    }
+}
+
+.avisos {
+    width: 100%;
+    text-align: center;
+    color: $blanco;
+    display: inline-block;
+    margin: 0 0 12px 0;
+    div {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid $blanco;
+    }
+}
+
+.box-info {
+    width: 100%;
+    text-align: center;
+    color: $gris3;
+    display: inline-block;
+    background: $gris1;
+    padding: 30px 0;
+    margin: 0 0 15px 0;
+    border: 1px solid $gris4;
+}
+
+.btn-active {
+    background: $verdetrasntitlehover !important;
+}
+
+.list-trans {
+    float: left;
+    width: 24.2%;
+    position: relative;
+    margin: 0 10px 10px 0;
+    border-bottom: 3px solid $gris6;
+    text-align: center;
+    height: 300px;
+}
+
+@mixin box_btn_menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+@mixin after_menu {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+@mixin before_menu {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+@mixin title_btn_menu {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+@mixin btn_ley_cont {
+    background: $verde_menu_cont;
+    width: 100%;
+    height: 175px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+div[data="transparencia"] {
+    h1,h2,h3,p {
+        margin: 0;
+        padding: 0;
+    }
+    .cycle-slideshow {
+        width: 100%;
+        height: 216px;
+        .item-slide {
+            width: 100%;
+            height: 216px;
+            .label {
+                color: $blanco;
+                h1, h2 {
+                    font-weight: normal;
+                    text-shadow: 0 0 4px #a09c9c;
+                    margin: 0;
+                    left: 12px;
+                }
+                h1 {
+                    top: 35px;
+                    @include fuente(3em, $black);
+                    line-height: 1em;
+                }
+                h2 {
+                    top: 130px;
+                    font-size: 1.8em;
+                    @include fuente(1.8em, $light);
+                }
+            }
+        }
+    }
+    .titlebaner {
+        text-transform: uppercase;
+    }
+    section[data="title"] {
+        @extend .title-trans;
+        background: $verdetrasntitle;
+        margin-top: 25px;
+        h1{
+	         margin: 0;
+	        text-transform: uppercase;
+	        font-size: 1.4em;
+	        text-align: center;
+	        padding:10px;
+        }
+    }
+    section[data="title2"] {
+        @extend .title-trans;
+        background: $azul;
+        position: relative;
+        margin: 25px 0 0 0;
+        h1{
+	         margin: 0;
+	        text-transform: uppercase;
+	        font-size: 1.4em;
+	        text-align: center;
+	        padding:10px;
+        }
+        div {
+            @extend .box-info;
+            display: none;
+            position: absolute;
+            left: 0;
+            text-align: left;
+            z-index: 100;
+            fieldset {
+                border: none;
+                padding: 0 36px;
+            }
+            label {
+                @include fuente(0.83em, $montserratregular);
+                margin: 20px 0;
+                display: inline-block;
+                position: relative;
+                input[type=text] {
+                    border: 1px solid $negro;
+                    width: 290px;
+                }
+                &:nth-child(3) {
+                    margin: 5px 0 10px 0;
+                }
+                input[type=button] {
+                    @include fuente(0.83em, $montserratregular);
+                    @include transition(all, 0.5s, ease-in-out);
+                    color: $blanco;
+                    background: $azul;
+                    width: 125px;
+                    border: none;
+                    text-transform: uppercase;
+                    height: 36px;
+                    position: absolute;
+                    right: 0;
+                }
+                input[type=button]:hover {
+                    background: $azul_tras;
+                    color: $azul;
+                }
+                textarea {
+                    width: 807px;
+                    height: 50px;
+                }
+                &:first-child {
+                    float: left;
+                    width: 47%;
+                    padding: 0 0 0 18px;
+                }
+                &:nth-child(2) {
+                    float: right;
+                    width: 50%;
+                    text-align: right;
+                }
+                &:nth-child(3) {
+                    width: 100%;
+                }
+                &:last-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    section[data="aviso1"] {
+        @extend .avisos;
+        @include fuente(0.83em, $montserratregular);
+        background: $rojoaviso;
+        div {
+	        margin: 10px;
+	        padding: 10px;
+	        border: 1px solid $blanco;
+		}
+
+        h3 {
+            text-transform: uppercase;
+            margin: 0 0 8px 0;
+        }
+        a {
+            color: #aa2e2e;
+            @include transition(all, 0.5s, ease-in-out);
+        }
+        a:hover {
+            color: $blanco;
+        }
+    }
+    section[data="aviso2"] {
+        @extend .avisos;
+        @include fuente(0.83em, $montserratregular);
+        background: $azul_tras;
+        div {
+       		margin: 10px;
+        	padding: 10px;
+        	border: 1px solid $blanco;
+		}
+
+        h3 {
+            text-transform: uppercase;
+            margin: 0 0 8px 0;
+        }
+    }
+    section[data="box-info"] {
+        @extend .box-info;
+        @include fuente(0.83em, $montserratregular);
+        line-height: 18px;
+        h3 {
+            @include fuente(1.8em, $montserratregular);
+            margin: 16px 0 8px 0;
+        }
+        li {
+            list-style: none;
+            &:first-child {
+                letter-spacing: 0.3em;
+            }
+        }
+    }
+    article[data="box-menu"] {
+        a {
+            @include fuente(1.5em, $bold);
+            color: $blanco;
+            float: left;
+            width: 460px;
+            height: 229px;
+            margin: 10px 0 25px 0;
+            position: relative;
+            background: url("../img/transparencia/img-ley-trans-btn.jpg");
+            text-transform: uppercase;
+            &:after {
+                @include after_menu;
+                background: $verde_menu_trans1;
+                @include opacity(0.5);
+            }
+            &:before {
+                @include before_menu;
+                background: url("../img/transparencia/ley-trans-ico.png") no-repeat 50% 30%;
+                @include transition(all, 0.5s, ease-in-out);
+            }
+            div {
+                @include box_btn_menu;
+                background: $verde_menu_trans1;
+                @include transition(all, 0.5s, ease-in-out);
+            }
+            &:last-child {
+                float: right;
+                background: url("../img/transparencia/img-ley-cont-btn.jpg");
+                div {
+                    background: $verde_menu_trans2;
+                }
+                &:before {
+                    @include before_menu;
+                    background: url("../img/transparencia/ley-cont-ico.png") no-repeat 50% 30%;
+                    @include transition(all, 0.5s, ease-in-out);
+                }
+            }
+            &:hover {
+                div {
+                    height: 32%;
+                }
+                &:before {
+                    background-position: 50% 15%;
+                }
+            }
+            span {
+                @include title_btn_menu;
+            }
+        }
+    }
+    section[data="content-general"] {
+        margin: 15px auto;
+        @include fuente(0.8em, $bold);
+        text-transform: uppercase;
+        li {
+            list-style: none;
+        }
+    }
+    section[data="titleleytrans"] {
+        @extend .title-trans;
+        background: $azul_fuerte;
+        margin-top: 25px;
+        display: inline-block;
+         h1{
+	         margin: 0;
+	        text-transform: uppercase;
+	        font-size: 1.4em;
+	        text-align: center;
+	        padding:10px;
+        }
+
+    }
+    /******************************************************************** data ley de transparencia ********************************************/
+    article[data="leytrans"] {
+        ul {
+            //  @for $i from 1 through 20{
+            li {
+                @extend .list-trans;
+                div {
+                    width: 100%;
+                    background-color: $verdetrasntitle;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    height: 172px;
+                    @include transition(all, 0.2s, ease-in-out);
+                }
+                p {
+                    padding: 10px 5px;
+                }
+                &:nth-child(4n+4) {
+                    float: right;
+                    margin: 0;
+                }
+                a {
+                    color: $gris5;
+                    line-height: 110%;
+                    @include fuente(0.8em, $bold);
+                    @include transition(all, 0.5s, ease-in-out);
+                    &:hover div {
+                        background-color: $verdetrasntitlehover;
+                        background-position: 50% 40%;
+                    }
+                    &:hover {
+                        color: $verdetrasntitlehover;
+                    }
+                }
+            }
+            // }
+       
+        }
+    }
+    /******************************************************************** sub-menu ley de tansparencia************************************************/
+    article[data="sub-menu"] {
+        header {
+            @extend .title-trans;
+            background: $verdetrasntitlehover;
+            @include fuente(0.8em, $bold);
+            display: inline-block;
+            h1 {
+                text-align: center;
+                margin: 10px 100px;
+            }
+        }
+        section {
+            margin: 10px 100px;
+            h2 {
+                @extend .title-trans;
+                background: $gris7;
+                @include fuente(1em, $montserratregular);
+                display: inline-block;
+                text-transform: none;
+                text-align: left;
+                color: $blanco;
+                padding: 10px;
+            }
+            h3 {
+                @extend .title-trans;
+               // background: $gris7;
+                @include fuente(1em, $montserratregular);
+                display: inline-block;
+                text-transform: none;
+                text-align: left;
+                color: $negro;
+                padding: 10px;
+            }
+            ul {
+                margin: 5px 0px;
+                li {
+                    margin: 5px 0 0 20px;
+                    a {
+                        @include fuente(1em, $montserratregular);
+                        // color: $oscuro;
+                        text-transform: none;
+                        color: $gris5;
+                        @include transition(all, 0.2s, ease-in-out);
+                        span {
+                            margin: 0 10px;
+                        }
+                        &:hover {
+                            color: $verdetrasntitlehover;
+                        }
+                    }
+                }
+            }
+            p {
+                @include fuente(1em, $montserratregular);
+                text-transform: none;
+            }
+        }
+        & > div {
+            margin: 5px 80px;
+            text-align: right;
+            position: relative;
+            a {
+                color: $negro;
+                span {
+                    position: absolute;
+                    top: -6px;
+                    right: 135px;
+                    width: 29px;
+                    height: 29px;
+                    border: $gris4 solid 1px;
+                    background: whitesmoke url("../img/blue-arrow-left.png") no-repeat 50% 50%;
+                    @include transition(all, 0.2s, ease-in-out);
+                    @include border-radius(50%);
+                }
+                &:hover span {
+                    background: whitesmoke url("../img/blue-arrow-left.png") no-repeat 30% 50%;
+                }
+            }
+        }
+    }
+    article[data="directorio"] {
+        header {
+            @extend .title-trans;
+            background: $verdetrasntitlehover;
+            @include fuente(0.8em, $bold);
+            display: inline-block;
+            h1 {
+                text-align: center;
+                margin: 10px 100px;
+            }
+        }
+        section {
+            margin: 10px 0;
+            & > div {
+                @extend .box-info;
+                color: $gris5;
+                @include fuente(1em, $regular);
+                & > p[data="domicilio"] {
+                    padding: 0 200px;
+                }
+            }
+        }
+    }
+    /************************************************************************organigrama ley de transparencia************************************/
+    article[data="organigrama"] {
+        header {
+            @extend .title-trans;
+            background: $verdetrasntitlehover;
+            @include fuente(0.8em, $bold);
+            display: inline-block;
+            h1 {
+                text-align: center;
+                margin: 10px 100px;
+            }
+        }
+        section {
+            margin: 10px 0;
+            & > div {
+                @extend .box-info;
+                color: $gris5;
+                @include fuente(1em, $regular);
+                & > p[data="domicilio"] {
+                    padding: 0 200px;
+                }
+            }
+        }
+        section[data="archive"] {
+            margin: 10px 100px;
+            li {
+                border-bottom: 1px solid $gris7;
+                margin: 5px 0;
+                a {
+                    margin: 0 15px;
+                    color: $gris5;
+                    @include transition(all, 0.2s, ease-in-out);
+                    span {
+                        margin: 0 10px;
+                    }
+                    &:hover {
+                        color: $verdetrasntitlehover;
+                    }
+                }
+            }
+        }
+        & > div {
+            margin: 5px 80px;
+            text-align: right;
+            position: relative;
+            a {
+                color: $negro;
+                span {
+                    position: absolute;
+                    top: -6px;
+                    right: 135px;
+                    width: 29px;
+                    height: 29px;
+                    border: $gris4 solid 1px;
+                    background: whitesmoke url("../img/blue-arrow-left.png") no-repeat 50% 50%;
+                    @include transition(all, 0.2s, ease-in-out);
+                    @include border-radius(50%);
+                }
+                &:hover span {
+                    background: whitesmoke url("../img/blue-arrow-left.png") no-repeat 30% 50%;
+                }
+            }
+        }
+    }
+    /******************************************************************** data ley de transparencia ********************************************/
+    
+    article[data="leycont"] {
+        @for $i from 1 through 4 {
+            & > div:nth-child(#{$i}) {
+                float: left;
+                width: 23.8%;
+                margin: 0 15px 15px 0;
+                position: relative;
+                & > div:first-child {
+                    @include btn_ley_cont;
+                    &:before {
+                        @include before_menu;
+                        background: url("../img/transparencia/ley-cont-#{$i}.png") no-repeat 50% 30%;
+                    }
+                    &:after {
+                        @include after_menu;
+                        content: attr(data);
+                        text-align: center;
+                        color: $blanco;
+                        top: 82%;
+                        height: 10%;
+                    }
+                }
+                & > div:nth-child(2) {
+                    @extend .box-info;
+                    padding: 10px 0;
+                    margin: 0;
+                    height: 540px;
+                    li {
+                        position: relative;
+                        padding: 5px 0;
+                        text-align: left;
+                        @include transition(all, 0.5s, ease-in-out);
+                        &:before {
+                            @include before_menu;
+                            z-index: -1;
+                            @include transition(all, 0.5s, ease-in-out);
+                        }
+                        a {
+                            margin: 0 10px;
+                            display: inline-block;
+                            line-height: 105%;
+                            color: $gris5;
+                            cursor: pointer;
+                            @include fuente(1.3em, $regular);
+                            text-transform: none;
+                        }
+                        &:hover {
+                            background: #89cdc1;
+                            &:before {
+                                @include before_menu;
+                                width: 3%;
+                                background: $verde_menu_cont;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    float: right;
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+    }
+}
+/******************************************************************************mapas************************************************************************************************/
+.verde{
+    color: #00ff24;
+}
+span[data="unidades_M"]{
+    text-transform:uppercase;
+     @include fuente(.4em, $regular);
+}
+
+span[data="unidades_m"]{
+    text-transform:lowercase;
+     @include fuente(.4em, $regular);
+}
+span[data="unidades"]{
+    text-transform:lowercase;
+     
+}
+.estTable{
+    overflow: scroll;
+    padding:0!important;
+}
+.estaciones{
+    display: inline-block;
+    width: 100%;
+    color: $blanco;
+    font-family: $montserratregular;
+    div:first-child{
+        background:$azul_map;
+        text-align: center;
+        padding:15px 0;
+    }
+    div{
+        width: 100%;
+        display: inline-block;
+        margin: 10px 0;
+       
+        article{
+            float: left;
+            width: 30%;
+            height: 200px;
+            padding:10px;
+            &:first-child{
+                background:#ff9e19;
+            }
+            &:nth-child(2){
+                background:#8c9ebd;
+                margin: 0 18px;
+                fieldset{
+                    border:none;
+                    font-size: 0.8em;
+                    text-align:center;
+                    margin: 0;
+                    padding:0;
+                    label{
+                        margin: 4px 0;
+                        width: 115px;
+                        float: left;
+                        text-align: right;
+                         font-size: 0.9em;
+
+                    }
+                    input[type="text"], select{
+                        float: right;
+                        height: 12px;
+                        margin: 3px 0;
+                        width:164px;
+
+                    }
+                    select{
+                        width: 170px;
+                        height:auto;
+                    }
+                    div{
+                        display: inline-block;
+                        clear: both;
+                        span{
+                            width: 100%;
+                            color: rgb(228, 37, 37);
+                            text-transform: uppercase;
+                            margin: 5px 0;
+                            font-size: 0.8em;
+                            display: none;
+                            display: inline-block;
+                        }
+                        input[type="button"], input[type="submit"]{
+                        background:#7163ab;
+                        border: 2px solid #ffffff;
+                        padding:5px 10px;
+                        text-transform: uppercase;
+                        margin: 5px;
+                        color: $blanco;
+                        @include transition(all, 0.5s, ease-in-out);
+                            &:hover{
+                                background:#9a87e7;
+                            }
+
+                        }
+                    }
+                }
+            }
+            &:last-child{
+                background:$azul_map;
+            }
+        }
+    }
+    h3{
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        text-align: center
+    }
+    p{
+
+        text-align: justify;
+    }
+}
+.content-map{
+    display: none;
+    width: 100%;
+    section:first-child{
+        display: inline-block;
+        width: 100%;
+        article{
+            float: left;
+            width: 16.2%;
+            margin: 10px 10px 0 0;
+            background:$verdemap;
+            padding:10px 0 20px 0;
+            text-align: center;
+            &:first-child{
+                width: 38%;
+                text-align: left;
+                padding:10px 20px 20px 20px;
+            }
+            &:last-child{
+                margin: 10px 0 0 0;
+            }
+            &:nth-child(3){
+                width: 22.2%;
+            }
+            h1,h2{
+                margin: 0;
+                padding:0;
+                color: $blanco;
+               @include fuente(0.7em, $regular);
+               text-transform: uppercase;
+            }
+            h1{
+                font-size: 2.5em;
+            }
+            h2{
+                margin: -13px 0 0 0;
+
+            }
+        }
+    }
+    section:last-child{
+        display: inline-block;
+        width: 100%;
+        border:1px solid $gris;
+        $i: 5;
+			@while $i > 0 {
+				 article:nth-child(#{$i}){
+		            float: left;
+		            width: 19.9%;
+		            background:#f5f5f5 url('../img/art-sta-#{$i}.png')no-repeat 50% 90%;
+		            border-right:solid 1px $negro;
+		            height: 429px;
+		             &:last-child{
+		                border-right:none;
+		            }
+			  .item-#{$i} { width: 2em * $i; }
+			  $i: $i - 1;
+			}
+            h1{
+                background:$azul_map;
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+                text-transform: uppercase;
+                @include fuente(0.8em, $regular);
+                color: $blanco;
+            }
+            p{
+                 padding: 10px;
+                 @include fuente(1em, $regular);
+                 color: #686868;
+                 text-align: right;
+                 text-transform: uppercase;
+            }
+        }
+
+    }
+}

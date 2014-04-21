@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"field":"imagen","label":"Imagen (1400 p\u00edxeles de ancho por 423 p\u00edxeles de alto)","type":"image","type_options":{"size":"210","width":"300","height":"100","thumbnail":"mini","img_width":"1400","img_height":"423"},"validation":"notEmpty"}

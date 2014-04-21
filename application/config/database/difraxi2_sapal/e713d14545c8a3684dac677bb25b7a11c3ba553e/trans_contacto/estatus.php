@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"field":"estatus","label":"Estatus","type":"select","type_options":{"size":"210","width":"300","height":"100","thumbnail":"mini"},"validation":"notEmpty","list_choose":"database","multiple":"","db_options":{"table":"trans_estatusSolicitudes","key":"estado","value":"estado"}}

@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"field":"ico","label":"Imagen Resoluci\u00f3n 108px * 107px","type":"image","type_options":{"size":"210","width":"300","height":"100","thumbnail":"mini","img_width":"","img_height":""},"validation":""}
